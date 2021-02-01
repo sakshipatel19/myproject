@@ -1,0 +1,87 @@
+@import "../../../../styles/colors.scss";
+
+.vertical-bar-container {
+	display: flex;
+	align-items: flex-end;
+	height: 32px;
+	width: 10px;
+	margin: 1px;
+	.vertical-progress-bar {
+		flex: 1;
+	}
+}
+
+.brand-score-details {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex: 1;
+}
+
+.attribute-brand-compare-view {
+	.common-table-container {
+		th {
+			text-align: center;
+		}
+		td {
+			line-height: normal;
+		}
+		.client-brand-name {
+			background-color: $brandCompareClientColor;
+		}
+		tbody {
+			tr:hover {
+				.client-brand-name {
+					background-color: $scoreSelectedColor;
+				}
+			}
+		}
+	}
+	.attribute-compare-score {
+		font-size: 12px;
+		width: 30px;
+		font-family: "NotoSans-Condensed";
+		.initial {
+			display: none;
+		}
+		.date-compare {
+			display: none;
+			text-align: left;
+			.date-compare-difference {
+				margin-left: 0px;
+				font-size: 12px;
+				font-family: "NotoSans-SemiBold";
+			}
+		}
+		&.date-compare-score {
+			text-align: left;
+		}
+		&.initial-score {
+			text-align: right;
+		}
+	}
+
+	.attribute-brand-row {
+		.attribute-name {
+			text-align: right;
+			padding-right: 30px;
+			.actionable-icon {
+				vertical-align: middle;
+				margin-left: 10px;
+			}
+		}
+		.attribute-score-data {
+			padding-bottom: 0px;
+		}
+		&:hover {
+			.attribute-compare-score {
+				.initial,
+				.date-compare {
+					margin: 1px;
+					display: inline-flex;
+					flex-direction: column;
+				}
+			}
+		}
+	}
+}

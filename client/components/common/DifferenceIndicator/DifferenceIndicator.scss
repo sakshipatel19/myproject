@@ -1,0 +1,14 @@
+.score-difference {
+	margin-left: 10px;
+	font-size: 14px;
+	font-family: "NotoSans-Regular";
+	align-self: center;
+	display: flex;
+
+	.score-difference-indicator {
+		margin-left: 6px;
+		cursor: default;
+		margin-bottom: 2px;
+		align-self: flex-end;
+	}
+}

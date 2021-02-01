@@ -1,0 +1,33 @@
+.chart-container {
+	padding: 20px;
+	svg {
+		overflow: visible;
+		.bar {
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		.y-axis line {
+			stroke: #e7e7e7;
+		}
+		.y-axis path {
+			stroke: #ffffff;
+		}
+		.bar-tooltip {
+			background-color: red;
+		}
+	}
+}
+
+.bar-chart-container {
+	display: flex;
+	flex-direction: column;
+
+	.actionable-list {
+		padding-left: 65px;
+		padding-right: 25px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}

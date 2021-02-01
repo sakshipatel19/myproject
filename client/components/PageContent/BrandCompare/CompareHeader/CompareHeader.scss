@@ -1,0 +1,211 @@
+@import "../../../../styles/colors.scss";
+
+.compare-header {
+	z-index: 2;
+	.card-container {
+		z-index: 2;
+		padding: 0px;
+		margin-top: 30px;
+		box-sizing: border-box;
+		border: 1px solid $tabContainerBorderBottom;
+		border-radius: 10px;
+		background-color: $defaultBackgroundColor;
+		box-shadow: 0 20px 60px -22px rgba(0, 67, 132, 0.3);
+	}
+	.compare-header-container {
+		display: flex;
+		flex-direction: column;
+		.compare-header-content {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			border-bottom: 1px solid $tabContainerBorderBottom;
+			.compare-header-title {
+				color: $primaryBlackColor;
+				font-family: "NotoSans-Bold";
+				font-size: 18px;
+				padding: 10px 30px;
+				letter-spacing: 0;
+				line-height: 26px;
+				display: flex;
+				align-items: center;
+			}
+			.compare-header-items {
+				display: flex;
+				flex-direction: row;
+				justify-self: center;
+				align-items: center;
+				.items-list {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					.items {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						color: $primaryBlackColor;
+						padding: 10px 30px;
+						font-family: "NotoSans-SemiBold";
+						font-size: 10px;
+						letter-spacing: 1px;
+						.compare-items {
+							padding-bottom: 10px;
+							width: 25px;
+							height: 25px;
+						}
+					}
+					.vertical-separator {
+						height: 16px;
+					}
+				}
+			}
+		}
+
+		.compare-header-brands-list-conatiner {
+			display: flex;
+			flex-direction: row;
+			.compare-header-filter {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				position: relative;
+				border-right: 1px solid $tabContainerBorderBottom;
+
+				.dropdown-select-content {
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+
+					position: relative;
+					.checkbox-item {
+						padding: 4px;
+						position: absolute;
+						&:hover {
+							background-color: $defaultBackgroundColor;
+						}
+					}
+					.compare-header-brandName {
+						color: $primaryBlackColor;
+						font-family: "NotoSans-Regular";
+						font-size: 12px;
+						line-height: 18px;
+						align-self: center;
+						padding-top: 16px;
+						height: 40px;
+						cursor: pointer;
+					}
+				}
+				.down-arrow-compare {
+					align-self: center;
+				}
+				.compare-brand-color {
+					height: 6px;
+					border-bottom: inherit;
+				}
+			}
+			.compare-header-filter.first {
+				.compare-brand-color {
+					-webkit-border-bottom-left-radius: 10px 10px;
+					-moz-border-bottom-left-radius: 10px 10px;
+					border-bottom-left-radius: 10px 10px;
+				}
+			}
+
+			.compare-header-filter.last {
+				border-right: none;
+				.compare-brand-color {
+					-webkit-border-bottom-right-radius: 10px 10px;
+					-moz-border-bottom-right-radius: 10px 10px;
+					border-bottom-right-radius: 10px 10px;
+				}
+			}
+		}
+	}
+
+	.compare-brand-dropdown-container {
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		.selected {
+			.checkbox-text {
+				font-family: "NotoSans-Bold" !important;
+			}
+		}
+		.select-option-container {
+			display: flex;
+			align-items: center;
+			font-family: inherit;
+			padding: 0px 0px 10px 10px;
+			.checkbox-item {
+				padding-left: 10px;
+			}
+			.checkbox-text {
+				font-size: 12px;
+				font-family: "NotoSans-Regular";
+				color: $primaryBlackColor;
+				font-size: 12px;
+				line-height: 18px;
+				font-weight: 500;
+				margin-left: 10px;
+			}
+
+			&:hover {
+				cursor: pointer;
+				background-color: #def6ff;
+			}
+
+			.select-option-label {
+				font-size: 12px;
+				font-family: "GothamNarrow-Medium";
+				color: $primaryBlackColor;
+				font-weight: 500;
+				padding-right: 4px;
+			}
+		}
+		.dropdown-menu-content {
+			display: flex;
+			flex-direction: column;
+			padding-top: 20px;
+		}
+		.compare-tab-footer-content {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			padding: 10px;
+			border: 1px solid $tabContainerBorderBottom;
+			border-radius: 0 0 4px 4px;
+			background-color: $filterSelectedColor;
+			padding-right: 15px;
+			box-sizing: border-box;
+			margin-top: 10px;
+			.compare-ribbon-dropdown-cancel {
+				font-size: 12px;
+				padding-left: 10px;
+				letter-spacing: 1.5px;
+				font-family: "NotoSans-Bold";
+				cursor: pointer;
+				&:hover {
+					color: #4ec7f0;
+				}
+			}
+			.compare-ribbon-dropdown-select {
+				cursor: pointer;
+				.select-text {
+					font-size: 12px;
+					padding-right: 10px;
+					letter-spacing: 1.5px;
+					font-family: "NotoSans-Bold";
+				}
+				.apply-icon {
+					vertical-align: middle;
+				}
+				&.disabled {
+					color: $borderColor;
+				}
+				&:hover {
+					color: #4ec7f0;
+				}
+			}
+		}
+	}
+}

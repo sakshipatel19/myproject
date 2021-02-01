@@ -1,0 +1,24 @@
+@import "./mixins.scss";
+
+@include font-face("NotoSans-Light", "./assets/fonts/NotoSans-Light", "ttf");
+@include font-face("NotoSans-Bold", "./assets/fonts/NotoSans-Bold", "ttf");
+@include font-face(
+	"NotoSans-Condensed",
+	"./assets/fonts/NotoSans-Condensed",
+	"ttf"
+);
+@include font-face(
+	"NotoSans-Regular",
+	"./assets/fonts/NotoSans-Regular",
+	"ttf"
+);
+@include font-face(
+	"NotoSans-SemiBold",
+	"./assets/fonts/NotoSans-SemiBold",
+	"ttf"
+);
+@include font-face(
+	"NotoSans-CondensedMedium",
+	"./assets/fonts/NotoSans-CondensedMedium",
+	"ttf"
+);

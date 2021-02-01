@@ -1,0 +1,59 @@
+.availability-row {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	justify-content: space-between;
+	.availability-lostbuybox-container {
+		flex-grow: 2;
+	}
+	.availability-catalog-container {
+		margin-right: 19px;
+		flex: 1;
+		.card-container {
+			width: 100%;
+			min-width: 335px;
+			height: 100%;
+			padding: 0 0 16px 0;
+			.catalog-health-container {
+				padding-top: 28px;
+				.label-container {
+					color: #212129;
+					font-family: "NotoSans-Bold";
+					font-size: 22px;
+					letter-spacing: 0;
+					line-height: 33px;
+					padding-left: 35px;
+				}
+				.catalog-health-list-container {
+					display: flex;
+					flex-wrap: wrap;
+					padding-left: 0;
+					.catalog-health-link {
+						max-width: 335px;
+						margin-right: 0;
+					}
+					.catalog-health-link:nth-child(1),
+					.catalog-health-link:nth-child(2) {
+						margin-bottom: 20px;
+					}
+					.catalog-health-list:hover {
+						border-radius: 0;
+					}
+					.catalog-health-list {
+						padding-left: 35px;
+						padding-right: 35px;
+						.catalog-health-list-item {
+							display: flex;
+							flex-direction: row-reverse;
+							justify-content: space-around;
+							.catalog-health-list-item-score {
+								padding-left: 36px;
+								margin-right: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

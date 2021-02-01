@@ -1,0 +1,19 @@
+.checkbox-item {
+	display: flex;
+	align-items: center;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 40px;
+	.checkbox-text {
+		margin-left: 15px;
+		color: #212129;
+		font-family: "NotoSans-Regular";
+		font-size: 12px;
+		font-weight: 300;
+		line-height: 18px;
+	}
+	&:hover {
+		cursor: pointer;
+		background-color: #ebf4fe;
+	}
+}

@@ -1,0 +1,88 @@
+@import "../../../../styles/colors.scss";
+
+.svg-content-responsive {
+	display: inline-block;
+}
+.d3-donut-outer-div-container {
+	display: inline-flex;
+	justify-content: center;
+	flex: 1;
+	position: relative;
+}
+
+.donut-chart-container {
+	display: flex;
+	justify-content: space-between;
+	flex: 2;
+	.dot-container:first-child {
+		margin-right: 15px;
+	}
+	.donut-chart-summary {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-bottom: 50px;
+		margin-right: 30px;
+		.donut-chart-total-score {
+			display: flex;
+			flex-direction: column;
+			.donut-chart-total-score-value {
+				color: $primaryBlackColor;
+				font-family: "NotoSans-SemiBold";
+				font-size: 28px;
+				letter-spacing: 1px;
+				margin-bottom: 20px;
+			}
+			.donut-chart-total-score-text {
+				color: $primaryBlackColor;
+				font-family: "NotoSans-Regular";
+				font-size: 14px;
+				line-height: 20px;
+			}
+			.dot-text {
+				color: $primaryBlackColor;
+				font-size: 22px;
+				line-height: 32px;
+			}
+		}
+		.donut-chart-factors-list {
+			display: flex;
+			justify-content: space-between;
+			.donut-chart-factor {
+				display: flex;
+				flex-direction: column;
+				padding: 5px;
+				.donut-chat-factor-label {
+					color: $primaryBlackColor;
+					font-family: "NotoSans-Regular";
+					font-size: 12px;
+					margin-bottom: 7px;
+					line-height: 18px;
+				}
+				.donut-chat-factor-value,
+				.dot-text {
+					color: $primaryBlackColor;
+					font-family: "NotoSans-SemiBold";
+					font-size: 18px;
+				}
+				&:hover {
+					background-color: $scoreSelectedColor;
+					border-radius: 4px;
+				}
+				&.donut-chart-factor-date-compare {
+					.dot-text {
+						font-family: "NotoSans-Regular";
+					}
+				}
+			}
+		}
+	}
+
+	.d3-pie-chart-initial-data,
+	.d3-pie-chart-compare-data {
+		text {
+			font-family: "NotoSans-Condensed";
+			font-size: 12px;
+		}
+	}
+}

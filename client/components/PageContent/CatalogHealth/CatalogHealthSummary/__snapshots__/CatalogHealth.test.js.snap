@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CatalogHealth tests CatalogHealth should render correctly 1`] = `
+<div
+  className="catalog-health-container"
+>
+  <Label
+    labelClass="section-header-title"
+    text="Catalogue Health"
+  />
+  <div
+    className="catalog-health-list-container"
+  >
+    <Link
+      className="catalog-health-link"
+      key="catalog-health-link-GOOD_0"
+      onClick={[Function]}
+      to="/analysis/catalog-health/catalog-health"
+    >
+      <div
+        className="catalog-health-list"
+      >
+        <div
+          className="catalog-health-list-heading"
+          key="catalog-health-list-heading-GOOD"
+        >
+          GOOD
+          <span
+            className="arrow"
+          >
+            <Icon
+              iconClass="icon-right-arrow"
+              name="sortRight"
+              size={12}
+            />
+          </span>
+        </div>
+        <div
+          className="catalog-health-list-item"
+        >
+          <div
+            className="catalog-health-list-item-score"
+            key="catalog-health-list-item-score-GOOD"
+            style={
+              Object {
+                "color": "#00B0A3",
+              }
+            }
+          >
+            35%
+          </div>
+          <div
+            className="catalog-health-list-item-desc"
+            key="catalog-health-list-item-desc-GOOD"
+          >
+            xyz
+          </div>
+        </div>
+      </div>
+    </Link>
+    <Link
+      className="catalog-health-link"
+      key="catalog-health-link-ACCEPTABLE_1"
+      onClick={[Function]}
+      to="/analysis/catalog-health/catalog-health"
+    >
+      <div
+        className="catalog-health-list"
+      >
+        <div
+          className="catalog-health-list-heading"
+          key="catalog-health-list-heading-ACCEPTABLE"
+        >
+          ACCEPTABLE
+          <span
+            className="arrow"
+          >
+            <Icon
+              iconClass="icon-right-arrow"
+              name="sortRight"
+              size={12}
+            />
+          </span>
+        </div>
+        <div
+          className="catalog-health-list-item"
+        >
+          <div
+            className="catalog-health-list-item-score"
+            key="catalog-health-list-item-score-ACCEPTABLE"
+            style={
+              Object {
+                "color": "#FCA400",
+              }
+            }
+          >
+            35%
+          </div>
+          <div
+            className="catalog-health-list-item-desc"
+            key="catalog-health-list-item-desc-ACCEPTABLE"
+          >
+            xyz
+          </div>
+        </div>
+      </div>
+    </Link>
+    <Link
+      className="catalog-health-link"
+      key="catalog-health-link-NEEDS IMPROVEMENT_2"
+      onClick={[Function]}
+      to="/analysis/catalog-health/catalog-health"
+    >
+      <div
+        className="catalog-health-list"
+      >
+        <div
+          className="catalog-health-list-heading"
+          key="catalog-health-list-heading-NEEDS IMPROVEMENT"
+        >
+          NEEDS IMPROVEMENT
+          <span
+            className="arrow"
+          >
+            <Icon
+              iconClass="icon-right-arrow"
+              name="sortRight"
+              size={12}
+            />
+          </span>
+        </div>
+        <div
+          className="catalog-health-list-item"
+        >
+          <div
+            className="catalog-health-list-item-score"
+            key="catalog-health-list-item-score-NEEDS IMPROVEMENT"
+            style={
+              Object {
+                "color": "#FF7A77",
+              }
+            }
+          >
+            35%
+          </div>
+          <div
+            className="catalog-health-list-item-desc"
+            key="catalog-health-list-item-desc-NEEDS IMPROVEMENT"
+          >
+            xyz
+          </div>
+        </div>
+      </div>
+    </Link>
+  </div>
+</div>
+`;

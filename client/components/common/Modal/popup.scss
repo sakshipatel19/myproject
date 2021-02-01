@@ -1,0 +1,113 @@
+@import "../../../styles/colors.scss";
+.popup-container {
+	background-color: $defaultBackgroundColor;
+	position: fixed;
+	z-index: 1301;
+	overflow-y: auto;
+	box-sizing: border-box;
+	z-index: 1301;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	margin: 12vh 0;
+	max-height: 75vh;
+	padding-bottom: 3vh;
+
+	.popup {
+		margin: 30px 150px;
+	}
+}
+
+.popupFooter {
+	background-color: $scoreSelectedColor;
+	height: 86px;
+	border-top: 2px solid $tabContainerBorderBottom;
+	position: fixed;
+	z-index: 1400;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.popup-footer-container {
+	display: flex;
+	margin: auto;
+	padding: 20px 60px 20px 20px;
+	font-family: "NotoSans-SemiBold";
+	justify-content: space-evenly;
+}
+
+.popup-view-Trend-Button {
+	background-color: $linkSelectedColor;
+	color: $defaultBackgroundColor;
+	border-radius: 7px;
+	border: 0px;
+	box-shadow: rgba(0, 67, 132, 0.3);
+	font-family: "NotoSans-Bold";
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding: 0 10px;
+	text-transform: uppercase;
+	&:hover {
+		background-color: $linkSelectedColor;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+.pouup-keywords-section {
+	display: flex;
+	justify-content: flex-end;
+	flex: 1;
+	.popup-records-selected-label,
+	.remove-selected-records {
+		margin: 10px 0 20px 30px;
+	}
+}
+
+.popup-records-selected-label {
+	color: $linkSelectedColor;
+	font-size: 12px;
+	cursor: pointer;
+	align-items: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+	.popup-records-count {
+		background-color: $linkSelectedColor;
+		border-radius: 4px;
+		padding: 8px 12px;
+		text-align: center;
+		color: $defaultBackgroundColor;
+		font-size: 14px;
+		margin-right: 10px;
+		min-width: 50px;
+		display: inline-block;
+	}
+
+	.popup-arrow-up-icon {
+		display: none;
+		margin-left: 10px;
+		height: 16px;
+		width: auto;
+		vertical-align: middle;
+	}
+}
+
+.remove-selected-records {
+	font-size: 12px;
+	padding-left: 30px;
+	letter-spacing: 1px;
+	color: $primaryBlackColor;
+	border-left: 1px solid $borderColor;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.popup-remove-icon {
+	vertical-align: middle;
+	margin-right: 10px;
+}

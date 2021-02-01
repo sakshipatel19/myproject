@@ -1,0 +1,80 @@
+.home-page-container {
+	height: 100vh;
+	width: 100vw;
+	background: url("https://images.commerceintelligence.ai/homepage-bg/Homepage_BG.webp")
+		no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	.home-page-content {
+		position: absolute;
+		left: 55%;
+		top: 10%;
+		.product-desc {
+			margin-top: 50px;
+			margin-bottom: 70px;
+			color: #fff;
+			width: 500px;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 26px;
+			font-family: "GothamNarrow-Book";
+		}
+		.sign-in-link {
+			margin-top: 50px;
+			border-radius: 25px;
+			background: #fff;
+			width: 151px;
+			height: 50px;
+			color: #212129;
+			font-family: "GothamNarrow-Medium";
+			font-size: 14px;
+			font-weight: 500;
+			letter-spacing: 3px;
+			line-height: 20px;
+			&:hover {
+				cursor: pointer;
+				color: #8484d8;
+			}
+			&:focus {
+				outline-style: none;
+			}
+		}
+	}
+}
+.loading-homepage-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.landing-page {
+	// .left-nav-container {
+	// 	position: fixed;
+	// 	height: 100vh;
+	// 	width: 233px;
+	// 	color: #fff;
+	// 	background-color: #08243f;
+	// }
+	.main-page-content-container {
+		position: relative;
+		left: 233px;
+		width: calc(100% - 233px);
+		background-color: #f7f9fc;
+		padding: 26px 70px 48px 77px;
+	}
+	.asins-landing-page {
+		left: 105px;
+		width: calc(100% - 105px);
+		padding-right: 175px;
+	}
+	.back-to-top {
+		position: fixed;
+		z-index: 1;
+		bottom: 0;
+		right: 0;
+		margin: 0 14px 20px 14px;
+	}
+}

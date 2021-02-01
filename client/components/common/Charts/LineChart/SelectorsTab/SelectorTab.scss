@@ -1,0 +1,41 @@
+@import "../../../../../styles/colors.scss";
+
+.selectors {
+	display: flex;
+	flex-direction: row;
+	margin-left: auto;
+	justify-content: space-between;
+	width: 240px;
+	.selector-item {
+		color: $primaryBlackColor;
+		font-family: "NotoSans-Regular";
+		font-size: 12px;
+		cursor: pointer;
+		&.selected {
+			color: $linkSelectedColor;
+			font-family: "NotoSans-SemiBold";
+			font-size: 12px;
+			position: relative;
+		}
+		&.disabled {
+			cursor: cell;
+			pointer-events: none;
+			opacity: 0.4;
+		}
+		&:hover {
+			font-family: "NotoSans-SemiBold";
+			color: $linkHoveredColor;
+		}
+		&.selected::before {
+			content: "";
+			position: absolute;
+			width: 20px;
+			bottom: 0;
+			left: 0;
+			border-radius: 1px;
+			border-bottom: 2px solid $linkSelectedColor;
+			margin-bottom: -2px;
+			margin-bottom: 3px;
+		}
+	}
+}

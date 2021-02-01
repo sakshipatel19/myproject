@@ -1,0 +1,85 @@
+.toast-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	z-index: 1010;
+	border-top: 2px solid #e7e7e7;
+	background-color: #fafafa;
+
+	// -webkit-animation: fadein 0.1s, fadeout 0.5s;
+	// animation: fadein 0.1s, fadeout 0.5s;
+
+	&.error {
+		border-top: 2px solid #ff625e;
+		background-color: #ffeded;
+	}
+	&.success {
+		border-top: 2px solid #00b0a3;
+		background-color: #f4fffe;
+	}
+	.toast-main-content {
+		color: #212129;
+		font-family: "GothamNarrow-Book";
+		font-size: 14px;
+		font-weight: 300;
+		letter-spacing: 0;
+		line-height: 20px;
+		margin-left: 10px;
+		margin-right: 30px;
+	}
+	.close-button-container {
+		display: flex;
+		align-items: center;
+		margin-left: 30px;
+		cursor: pointer;
+	}
+}
+
+/* Animations to fade the toast in and out */
+@-webkit-keyframes fadein {
+	from {
+		height: 0px;
+		opacity: 0;
+	}
+	to {
+		height: 80px;
+		opacity: 1;
+	}
+}
+
+@keyframes fadein {
+	from {
+		height: 0px;
+		opacity: 0;
+	}
+	to {
+		height: 80px;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeout {
+	from {
+		height: 80px;
+		opacity: 1;
+	}
+	to {
+		height: 0px;
+		opacity: 0;
+	}
+}
+
+@keyframes fadeout {
+	from {
+		height: 80px;
+		opacity: 1;
+	}
+	to {
+		height: 0px;
+		opacity: 0;
+	}
+}

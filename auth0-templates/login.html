@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Sign In</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		/>
+		<link
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+		<script src="https://cdn.auth0.com/js/auth0/9.11.2/auth0.min.js"></script>
+		<script src="https://cdn.auth0.com/js/polyfills/1.0/object-assign.min.js"></script>
+		<link
+			href="https://images.commerceintelligence.ai/common/gotham-fonts/GothamNarrowFonts.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<style>
+			* {
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+			}
+
+			html {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14px;
+				background: #000000;
+			}
+
+			body {
+				background-image: url("https://images.commerceintelligence.ai/signin-bg/SignIn_BG.webp");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 100vh;
+				min-height: 680px;
+				position: relative;
+			}
+
+			.login-container {
+				position: absolute;
+				top: 15%;
+				right: 7%;
+				width: 460px;
+				min-height: 545px;
+				height: 70%;
+				border-radius: 22px;
+				box-sizing: border-box;
+				border: 1px solid #e7e7e7;
+				box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.03);
+				background-color: #ffffff;
+			}
+
+			.login-content,
+			.forgot-password-content {
+				margin: 60px;
+			}
+
+			.login-header,
+			.forgot-password-header,
+			.password-reset-header {
+				width: 100%;
+				color: #212129;
+				font-size: 28px;
+				padding-left: 4px;
+				font-weight: bold;
+				margin-bottom: 60px;
+				/* font-family: "GothamNarrow-Bold"; */
+			}
+
+			.password-reset-header {
+				font-size: 24px;
+			}
+
+			.lbl-login-user-email,
+			.lbl-login-user-password {
+				color: #858585;
+				font-size: 10px;
+				font-weight: 500;
+				letter-spacing: 1px;
+				margin-bottom: 5px;
+				/* font-family: "GothamNarrow-Medium"; */
+			}
+
+			.login-username {
+				padding-bottom: 30px;
+			}
+
+			.login-username,
+			.login-password {
+				margin: 30px 0;
+				display: flex;
+				flex-direction: column;
+				/* font-family: "GothamNarrow-Medium"; */
+			}
+
+			input::placeholder {
+				color: #e7e7e7;
+				font-size: 14px;
+				font-weight: 500;
+			}
+
+			input:focus,
+			.button:focus {
+				outline: none;
+				outline-style: none;
+			}
+
+			input {
+				border: none;
+				padding: 5px;
+				border-bottom: 1px solid #9fa3a7;
+				width: 338px;
+				/* font-family: "GothamNarrow-Medium"; */
+			}
+
+			.login-button-container {
+				padding: 30px 0 40px 0;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.forgot-password {
+				color: #212129;
+				font-size: 12px;
+				font-weight: 500;
+			}
+
+			.forgot-password:hover,
+			.reset-password-resend-link:hover {
+				color: #4ec7f0;
+				cursor: pointer;
+			}
+
+			.button {
+				color: #212129;
+				font-size: 14px;
+				font-weight: 500;
+				letter-spacing: 3px;
+				text-align: center;
+				padding: 8px 30px 10px 30px;
+				border: 2px solid #16abe0;
+				border-radius: 43px;
+				background-color: #ffffff;
+			}
+
+			.button:disabled {
+				color: #d5d5d5;
+				border: 2px solid #d5d5d5;
+			}
+
+			.correct {
+				border-bottom: 1px solid #16abe0;
+			}
+
+			.error {
+				border-bottom: 1px solid #ff625e;
+			}
+
+			.correct-icon,
+			.error-icon {
+				vertical-align: middle;
+				margin-left: 10px;
+				width: 16px;
+				height: 16px;
+				margin-top: 8px;
+			}
+
+			.correct-icon,
+			.error-icon {
+				display: none;
+			}
+
+			.reset-icon {
+				width: 100px;
+				padding: 80px 0;
+				vertical-align: middle;
+				color: #00b0a3;
+			}
+
+			.error-message {
+				color: #ff7a77;
+				font-size: 12px;
+				padding: 10px 0;
+				font-weight: 300;
+				display: none;
+				/* font-family: "GothamNarrow-Book"; */
+			}
+
+			.user-name-error {
+				height: 15px;
+			}
+
+			.password-eye {
+				margin-left: -20px;
+				padding-top: 10px;
+				padding-bottom: 8px;
+				cursor: pointer;
+			}
+
+			.password-eye-hide {
+				display: none;
+			}
+
+			.row-data {
+				display: flex;
+				width: 370px;
+			}
+
+			.forgot-password-header-content,
+			.password-reset-header-content {
+				display: none;
+			}
+
+			.forgot-password-header,
+			.password-reset-header {
+				margin-bottom: 10px;
+			}
+
+			.forgot-password-header-caption,
+			.password-reset-header-caption,
+			.password-reset-caption {
+				color: #212129;
+				font-size: 14px;
+				font-weight: 300;
+				/* font-family: "GothamNarrow-Book"; */
+			}
+
+			.forget-passowrd-button-container {
+				display: none;
+				justify-content: flex-end;
+			}
+
+			.resent-success-icon-content {
+				display: none;
+				justify-content: center;
+			}
+
+			.reset-password-button-container {
+				display: none;
+				flex-direction: column;
+				padding-top: 20px;
+			}
+
+			.reset-password-label {
+				color: #212129;
+				font-size: 12px;
+				font-weight: 300;
+				margin-bottom: 6px;
+				/* font-family: "GothamNarrow-Book"; */
+			}
+
+			.reset-password-resend-link {
+				color: #212129;
+				font-size: 14px;
+				font-weight: 500;
+				/* font-family: "GothamNarrow-Medium"; */
+			}
+
+			input:-internal-autofill-selected {
+				background-color: #fff !important;
+			}
+
+			input:-webkit-autofill {
+				-webkit-box-shadow: 0 0 0px 1000px white inset;
+			}
+		</style>
+		<script>
+			var config = JSON.parse(
+				decodeURIComponent(escape(window.atob("@@config@@")))
+			);
+
+			var isForgetPasswordClicked = false;
+
+			var params = Object.assign(
+				{
+					domain: config.auth0Domain,
+					clientID: config.clientID,
+					redirectUri: config.callbackURL,
+					responseType: "code"
+				},
+				config.internalOptions
+			);
+
+			var webAuth = new auth0.WebAuth(params);
+			var databaseConnection = "Username-Password-Authentication";
+
+			window.onload = function() {
+				document.getElementById("email").focus();
+			};
+
+			// var checkEnableInterval = setInterval(function() {
+			// 	checkSignInButon();
+			// 	console.log("checkEnableInterval", document.getElementById("email"));
+			// }, 333);
+
+			function isemail(email) {
+				var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+				return re.test(email);
+			}
+			function isPasword(password) {
+				var re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$^+=!*_?><.,~`()@%&]).{8,48}$/;
+				return re.test(password);
+			}
+			function Validateemail() {
+				var email = document.getElementById("email");
+
+				if (email.value != "" && isemail(email.value)) {
+					email.classList.remove("error");
+					email.classList.add("correct");
+					document.getElementById("icon_error").style.display = "none";
+					document.getElementById("icon_correct").style.display = "block";
+					document.getElementById("userNameError").style.display = "none";
+				} else {
+					email.classList.remove("correct");
+					email.classList.add("error");
+					document.getElementById("icon_correct").style.display = "none";
+
+					if (email.value === "")
+						document.getElementById("userNameError").innerText =
+							errorMessages.emptyEmail;
+					else {
+						document.getElementById("userNameError").innerText =
+							errorMessages.emailFormatError;
+						document.getElementById("icon_error").style.display = "block";
+					}
+					document.getElementById("userNameError").style.display = "block";
+					return false;
+				}
+				return true;
+			}
+
+			function checksubmitButton() {
+				var email = document.getElementById("email").value;
+				var forgetPassword = document.getElementById("forgot-password-button");
+				if (isemail(email) && password !== "") return true;
+			}
+
+			function checkSignInButon() {
+				var email = document.getElementById("email").value;
+				var password = document.getElementById("password").value;
+				var singin = document.getElementById("signIn");
+				if (isemail(email) && password !== "") return true;
+			}
+			function onPasswordBlur() {
+				validatePassword();
+			}
+			function onPasswordEyeClick() {
+				var password = document.getElementById("password");
+
+				var eye = document.getElementById("eye");
+				if (password.type === "password") {
+					password.type = "text";
+					document.getElementById("eye-passwordShow").style.display = "none";
+					document.getElementById("eye-passwordHide").style.display = "block";
+				} else {
+					password.type = "password";
+					document.getElementById("eye-passwordHide").style.display = "none";
+					document.getElementById("eye-passwordShow").style.display = "block";
+				}
+			}
+
+			function login(e) {
+				e.preventDefault();
+				var isError = false;
+				if (isForgetPasswordClicked) {
+					onSubmitForgotPasswordClick(e);
+					return;
+				}
+				var username = document.getElementById("email").value;
+				var password = document.getElementById("password").value;
+				if (!Validateemail()) {
+					isError = true;
+				}
+				if (!validatePassword()) {
+					isError = true;
+				}
+				if (isError) return;
+				else {
+					clearallErrors();
+				}
+				webAuth.login(
+					{
+						realm: databaseConnection,
+						username: username,
+						password: password
+					},
+					function(err) {
+						console.log("Error:", err);
+						if (err) displayError(errorMessages.incorrectInput);
+					}
+				);
+			}
+
+			function validatePassword() {
+				var password = document.getElementById("password").value;
+				if (password == "") {
+					// || !isPasword(password)) {
+					document.getElementById("password").classList.add("error");
+					//if (password == "")
+					document.getElementById("passwordError").innerText =
+						errorMessages.passwordEmpty;
+					// else
+					// 	document.getElementById("passwordError").innerText =
+					// 		errorMessages.invalidPassword;
+					document.getElementById("passwordError").style.display = "block";
+					return false;
+				} else {
+					document.getElementById("password").classList.remove("error");
+					document.getElementById("passwordError").style.display = "none";
+				}
+				return true;
+			}
+
+			function clearallErrors() {}
+
+			function onSubmitForgotPasswordClick(e) {
+				e.preventDefault();
+				var username = document.getElementById("email").value;
+				if (!isemail(username)) {
+					document.getElementById("email").classList.add("error");
+					return;
+				}
+				//HideandShowresetpasswordContent();
+				webAuth.changePassword(
+					{ connection: databaseConnection, email: username },
+					function(err, resp) {
+						console.log(err, resp);
+						if (err) displayError(errorMessages.invalidEmail);
+						else {
+							HideandShowresetpasswordContent();
+						}
+					}
+				);
+			}
+
+			function HideandShowresetpasswordContent() {
+				document.getElementById("login-header").style.display = "none";
+				document.getElementById("forgot-password-header").style.display =
+					"none";
+				document.getElementById("password-reset-header-content").style.display =
+					"block";
+				document.getElementById("login-username").style.display = "none";
+				document.getElementById("login-password").style.display = "none";
+				document.getElementById(
+					"forget-passowrd-button-container"
+				).style.display = "none";
+				document.getElementById("login-button-container").style.display =
+					"none";
+				document.getElementById("error-message").style.display = "none";
+				document.getElementById(
+					"reset-password-button-container"
+				).style.display = "flex";
+				document.getElementById("resent-success-icon-content").style.display =
+					"flex";
+			}
+
+			var errorMessages = {
+				emptyInput: "Email or Password cannot be empty.",
+				passwordEmpty: "Password cannot be empty.",
+				invalidInput: "The email or password you've entered is invalid.",
+				incorrectInput: "The email or password you've entered is incorrect.",
+				emptyEmail: "Email field cannot be empty.",
+				invalidEmail: "The email you've entered is invalid.",
+				emailFormatError: "Incorrect email id. Please try again.",
+				invalidPassword: "Incorrect Password. Please try again."
+			};
+
+			function displayError(err) {
+				var errorMessage = document.getElementById("error-message");
+				errorMessage.innerHTML = `<span><i class='fa fa-info-circle' aria-hidden='true'></i> ${err}</span>`;
+				errorMessage.style.display = "block";
+			}
+
+			function onForgotPasswordClick() {
+				isForgetPasswordClicked = true;
+				Validateemail();
+				document.getElementById("login-password").style.display = "none";
+				document.getElementById("login-header").style.display = "none";
+				document.getElementById("forgot-password-header").style.display =
+					"block";
+				document.getElementById("error-message").style.display = "none";
+				document.getElementById("forgot-password-link").style.display = "none";
+				document.getElementById(
+					"forget-passowrd-button-container"
+				).style.display = "flex";
+				document.getElementById("login-button-container").style.display =
+					"none";
+				if (document.getElementById("email").value === "") {
+					document.getElementById("userNameError").style.display = "none";
+					email.classList.remove("error");
+					document.getElementById("icon_error").style.display = "none";
+				}
+				document.getElementById("email").focus();
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="login-container">
+			<div class="login-content">
+				<div class="login-header" id="login-header">Sign In</div>
+				<div class="forgot-password-header-content" id="forgot-password-header">
+					<div class="forgot-password-header">Forgot your password?</div>
+					<div class="forgot-password-header-caption">
+						We will send you a link to reset your password.
+					</div>
+				</div>
+				<div
+					class="password-reset-header-content"
+					id="password-reset-header-content"
+				>
+					<div class="password-reset-header">Password reset email sent.</div>
+					<div class="password-reset-caption">
+						A link to reset your password has been successfully sent to your
+						email account.
+					</div>
+				</div>
+				<form onsubmit="login()" id="login-form">
+					<div class="login-username" id="login-username">
+						<label class="lbl-login-user-email">EMAIL ADDRESS</label>
+						<div class="row-data">
+							<input
+								type="email"
+								id="email"
+								onblur="Validateemail()"
+								placeholder="abcd@xyz.com"
+								class="txt-username"
+							/>
+							<img
+								src="https://images.commerceintelligence.ai/common/Check.svg"
+								class="correct-icon"
+								id="icon_correct"
+							/>
+							<img
+								src="https://images.commerceintelligence.ai/common/Remove.svg"
+								class="error-icon"
+								id="icon_error"
+							/>
+							<!-- <i
+								class="fa fa-check-circle-o correct-icon"
+								id="icon_correct"
+							></i> -->
+							<!-- <i class="fa fa-times-circle-o error-icon" id="icon_error"></i> -->
+						</div>
+						<div class="user-name-error">
+							<label class="error-message" id="userNameError">
+								Incorrect email id. Please try again.
+							</label>
+						</div>
+					</div>
+					<div class="login-password" id="login-password">
+						<label class="lbl-login-user-password">PASSWORD</label>
+						<div class="row-data">
+							<input
+								type="password"
+								id="password"
+								placeholder="*********"
+								class="txt-password"
+								onblur="onPasswordBlur()"
+							/>
+							<img
+								src="https://images.commerceintelligence.ai/common/ShowPassword.svg"
+								class="password-eye password-eye-show"
+								id="eye-passwordShow"
+								onclick="onPasswordEyeClick()"
+							/>
+							<img
+								src="https://images.commerceintelligence.ai/common/HidePassword.svg"
+								class="password-eye password-eye-hide"
+								id="eye-passwordHide"
+								onclick="onPasswordEyeClick()"
+							/>
+						</div>
+						<div class="user-name-error">
+							<label class="error-message" id="passwordError">
+								Incorrect Password. Please try again.
+							</label>
+						</div>
+					</div>
+					<div
+						class="resent-success-icon-content"
+						id="resent-success-icon-content"
+					>
+						<img
+							src="https://images.commerceintelligence.ai/common/Check.svg"
+							class="reset-icon"
+						/>
+					</div>
+					<div class="user-name-error">
+						<div class="error-message" id="error-message">
+							The email or password you've entered is incorrect.
+						</div>
+					</div>
+
+					<div class="login-button-container" id="login-button-container">
+						<span
+							class="forgot-password"
+							id="forgot-password-link"
+							onclick="onForgotPasswordClick()"
+							>Forgot password?
+						</span>
+						<div>
+							<button
+								type="submit"
+								class="button"
+								id="signIn"
+								onclick="login(event)"
+							>
+								SIGN IN
+							</button>
+						</div>
+					</div>
+					<div
+						class="forget-passowrd-button-container"
+						id="forget-passowrd-button-container"
+					>
+						<span>
+							<button
+								type="submit"
+								class="button btn-submit"
+								id="forgot-password-button"
+								onclick="onSubmitForgotPasswordClick(event)"
+							>
+								SUBMIT
+							</button>
+						</span>
+					</div>
+					<div
+						class="reset-password-button-container"
+						id="reset-password-button-container"
+					>
+						<span class="reset-password-label">
+							Haven't got the link on your email?
+						</span>
+						<span
+							class="reset-password-resend-link"
+							onclick="onSubmitForgotPasswordClick(event)"
+						>
+							RESEND LINK
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+.summary-header-container {
+	margin: 40px 0px 30px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	.summary-header-text {
+		color: #212129;
+		font-family: "NotoSans-Bold";
+		font-size: 28px;
+		letter-spacing: 0;
+		line-height: 42px;
+	}
+}
+
+.selected-filters-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+	font-family: "NotoSans-SemiBold";
+	.selected-filters-text {
+		color: #212129;
+		font-family: "NotoSans-Regular";
+		font-size: 14px;
+		line-height: 20px;
+		span {
+			color: #1f8efa;
+		}
+	}
+	.vertical-separator {
+		height: 16px;
+		margin: 0px 30px;
+	}
+	.save-preset-container {
+		display: flex;
+		align-items: center;
+		.error-icon {
+			margin-right: 10px;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	.clear-all-container {
+		display: flex;
+		align-items: center;
+		.error-icon {
+			margin-right: 10px;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

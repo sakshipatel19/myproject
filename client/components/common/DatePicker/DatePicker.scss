@@ -1,0 +1,373 @@
+@import "../../../styles/colors.scss";
+
+.date-range-outer-container {
+	position: absolute;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	.blue {
+		.DayPicker-Day--hovered-range-start {
+			background-color: $filterSelectedColor;
+			border-radius: 3px;
+		}
+		.DayPicker-Day--hovered-range-end {
+			background-color: $filterSelectedColor;
+		}
+		.DayPicker-Day--selected {
+			background-color: $linkSelectedColor;
+			border-radius: 4px;
+			&:hover {
+				background-color: $linkSelectedColor;
+			}
+			&:focus {
+				outline: none;
+			}
+		}
+		.DayPicker-Day--selected-range {
+			background-color: $filterSelectedColor;
+			margin-bottom: 5px;
+		}
+		.DayPicker-Day--hovered-range {
+			background-color: $filterSelectedColor !important;
+		}
+	}
+	.compare {
+		.DayPicker-Day--hovered-range-start {
+			background-color: $compareDateRangeColor;
+		}
+		.DayPicker-Day--hovered-range-end {
+			background-color: $compareDateRangeColor;
+		}
+		.DayPicker-Day--selected {
+			background-color: #e9560c;
+			border-radius: 4px;
+			&:hover {
+				background-color: #e9560c;
+			}
+			&:focus {
+				outline: none;
+			}
+		}
+		.DayPicker-Day--selected-range {
+			background-color: $compareDateRangeColor;
+		}
+		.DayPicker-Day--hovered-range {
+			background-color: $compareDateRangeColor !important;
+		}
+	}
+	.date-range-inner-container {
+		position: absolute;
+		width: 850px;
+		min-height: 290px;
+		margin-top: 50px;
+		padding: 0px;
+		border-top-left-radius: 10px !important;
+		border-top-right-radius: 10px !important;
+		border-bottom-left-radius: 0px !important;
+		border-bottom-right-radius: 0px !important;
+		.bp3-divider {
+			margin: 0px;
+		}
+		.bp3-daterangepicker-shortcuts {
+			min-width: 145px;
+			padding-top: 65px;
+			border-top-left-radius: 10px !important;
+			color: $primaryBlackColor;
+			font-family: "NotoSans-SemiBold";
+			font-size: 12px;
+			letter-spacing: 0;
+			line-height: 18px;
+			background: $brandCompareClientColor;
+			&:focus {
+				outline: none;
+			}
+			.bp3-menu-item {
+				padding: 10px 30px;
+				font-family: "NotoSans-SemiBold";
+				color: $primaryBlackColor;
+				font-size: 12px;
+				letter-spacing: 0;
+				line-height: 18px;
+				&:hover {
+					outline: none;
+					background-color: $filterSelectedColor;
+				}
+			}
+			.bp3-menu-item.bp3-active {
+				background-color: $brandCompareClientColor;
+				color: $linkSelectedColor;
+			}
+		}
+		.DayPicker {
+			min-width: 348px;
+			padding: 10px 25px;
+			font-family: "NotoSans-Regular";
+
+			.DayPicker-NavButton--prev {
+				margin-top: 50px;
+				margin-left: 15px;
+			}
+			.DayPicker-NavButton--next {
+				margin-top: 50px;
+				margin-right: 15px;
+			}
+			.bp3-datepicker-caption {
+				margin: 15px 25px;
+				justify-content: center;
+				font-family: "NotoSans-SemiBold";
+				select {
+					border: none;
+					border-color: $defaultBackgroundColor;
+					&:hover {
+						background: none;
+						outline: none;
+					}
+					&:focus {
+						outline: none;
+					}
+					&:active {
+						background: none;
+					}
+				}
+				option {
+					overflow-y: scroll;
+					overflow-x: hidden;
+					background: none;
+					border: none;
+					font-family: "NotoSans-Regular";
+					font-size: 12px;
+					color: $primaryBlackColor;
+					line-height: 18px;
+					&:hover {
+						background: none;
+						outline: none;
+					}
+					&:focus {
+						outline: none;
+						background-color: none;
+					}
+					&:active {
+						background: none;
+					}
+				}
+				select.bp3-active:hover {
+					background-color: #ccc;
+					border: none;
+				}
+
+				option.bp3-active {
+					background-color: #ccc;
+					border: none;
+				}
+				.bp3-datepicker-month-select {
+					width: 110px;
+					border-radius: 4px;
+					background-color: $defaultBackgroundColor;
+					box-shadow: 0 1px 2px 0 rgba(0, 67, 132, 0.04),
+						0 2px 4px 0 rgba(0, 67, 132, 0.16);
+					margin-right: 25px;
+					.bp3-minimal select {
+						background: none;
+						&:hover {
+							background: none;
+							outline: none;
+						}
+						&:focus {
+							outline: none;
+						}
+					}
+				}
+				.bp3-datepicker-year-select {
+					border-radius: 4px;
+					width: 82px;
+					background-color: $defaultBackgroundColor;
+					box-shadow: 0 1px 2px 0 rgba(0, 67, 132, 0.04),
+						0 2px 4px 0 rgba(0, 67, 132, 0.16);
+
+					option {
+						overflow-y: scroll;
+						overflow-x: hidden;
+					}
+					option::-webkit-scrollbar {
+						width: 5px;
+						background-color: $defaultBackgroundColor;
+					}
+					option::-webkit-scrollbar-thumb {
+						background-color: #ccc;
+					}
+				}
+
+				.bp3-icon-double-caret-vertical {
+					content: none;
+					background: no-repeat;
+					top: 10px;
+					background-image: url("../../../assets/images/Down.svg");
+
+					svg {
+						content: none;
+						background: no-repeat;
+						visibility: hidden;
+					}
+				}
+			}
+			.bp3-datepicker-caption :first-child {
+				flex-grow: 0.5;
+			}
+			.DayPicker-Months {
+				height: 200px;
+				.DayPicker-Month {
+					width: 100%;
+					height: 100%;
+					.bp3-icon-double-caret-vertical {
+						right: 5px !important;
+					}
+					.bp3-divider {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.date-picker-buttons {
+		width: 850px;
+		display: flex;
+		flex-direction: row;
+
+		justify-content: space-between;
+		height: 50px;
+		margin-top: 340px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		.button-divider {
+			width: 146px;
+			background-color: $brandCompareClientColor;
+			border-right: 1px solid rgba(16, 22, 26, 0.15);
+			border-bottom-left-radius: 10px;
+		}
+		.date-buttons {
+			display: flex;
+			flex-direction: row;
+			padding: 15px;
+
+			.date-picker-cancel {
+				cursor: pointer;
+				color: $primaryBlackColor;
+				font-family: "NotoSans-SemiBold";
+				font-size: 14px;
+				padding-right: 50px;
+				letter-spacing: 1px;
+				line-height: 18px;
+			}
+			.date-picker-select {
+				cursor: pointer;
+				color: $primaryBlackColor;
+				font-family: "NotoSans-SemiBold";
+				font-size: 14px;
+				letter-spacing: 1px;
+				padding-right: 20px;
+				line-height: 18px;
+				.date-select {
+					padding-left: 10px;
+					color: black;
+					cursor: default;
+				}
+			}
+			.disabled {
+				color: #5c708099;
+				cursor: not-allowed;
+			}
+		}
+		&.blue-btn {
+			background-color: $filterSelectedColor;
+		}
+		&.compare-btn {
+			background-color: $compareDateRangeColor;
+		}
+	}
+
+	i {
+		position: absolute;
+		right: 217px;
+		top: 39px;
+		margin-left: -12px;
+		width: 40px;
+		height: 25px;
+		&::after {
+			content: "";
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			left: 50%;
+			transform: rotate(45deg);
+			background-color: #fff;
+			box-sizing: border-box;
+			box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.03);
+		}
+	}
+}
+
+.date-range-picker-component-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-right: 10px;
+
+	.calender-icons {
+		cursor: pointer;
+		display: flex;
+		width: 16px !important;
+		height: 16px !important;
+		align-items: center;
+	}
+	.pop {
+		z-index: 2;
+		width: 30px;
+		height: 30px;
+
+		border-radius: 4px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.blue.pop {
+		background-color: $filterSelectedColor;
+	}
+	.compare.pop {
+		background-color: $compareDateRangeColor;
+	}
+	.dates {
+		width: 190px;
+		margin-left: 20px;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		font-family: "NotoSans-Regular";
+	}
+}
+
+.date-range-compare-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 60px;
+	.date-range-main-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		border-right: 1px solid #eee;
+		.date-range-picker-component-container:last-child {
+			margin-top: 10px;
+		}
+	}
+	.date-range-main-container.disable {
+		color: #858585;
+		pointer-events: none;
+	}
+	.calender-compare-icon {
+		display: flex;
+		align-items: center;
+	}
+	.calender-compare {
+		margin-left: 30px;
+	}
+}

@@ -1,0 +1,50 @@
+@import "../../../../styles/colors.scss";
+
+$strokeLineColor: #f2f2f2;
+
+.d3-outer-div-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+
+.svg-content-responsive {
+	display: inline-block;
+	.chart-x-axis,
+	.chart-y-axis {
+		.domain {
+			color: $strokeLineColor;
+			width: 1px;
+		}
+		.tick line {
+			stroke: $strokeLineColor;
+		}
+		.tick text {
+			color: $primaryBlackColor;
+			font-family: "NotoSans-Condensed";
+			font-size: 10px;
+		}
+	}
+
+	.chart-y-axis .domain {
+		display: none;
+	}
+
+	.grid {
+		.domain {
+			display: none;
+		}
+		&.grid line {
+			stroke: $strokeLineColor;
+			stroke-width: 1px;
+			shape-rendering: crispEdges;
+		}
+	}
+
+	.line-chart-tooltip {
+		text {
+			font-family: "NotoSans-Condensed";
+			font-size: 10px;
+		}
+	}
+}

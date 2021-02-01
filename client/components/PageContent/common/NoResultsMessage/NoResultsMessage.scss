@@ -1,0 +1,12 @@
+.no-results-msg {
+	font-family: NotoSans-Regular;
+	.no-results-msg-header {
+		font-family: NotoSans-SemiBold;
+		margin: 20px 0;
+	}
+	.no-results-suggestions {
+		div:first-child {
+			margin-bottom: 10px;
+		}
+	}
+}

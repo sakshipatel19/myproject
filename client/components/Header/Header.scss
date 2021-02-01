@@ -1,0 +1,55 @@
+.main-header {
+	display: flex;
+	.header-left-container {
+		flex: 1;
+		.client-logo-image {
+			height: 30px;
+			width: 35px;
+		}
+	}
+	.header-right-container {
+		display: flex;
+		width: 431px;
+		height: 30px;
+		.header-filters {
+			display: flex;
+			justify-content: space-between;
+			width: 265px;
+		}
+		.filter-icon-separator {
+			margin: 0 40px;
+			align-self: center;
+			height: 16px;
+		}
+		.header-icons {
+			flex: 1;
+			display: flex;
+			justify-content: space-between;
+			.header-icon-section {
+				box-shadow: 0 1px 2px 0 rgba(0, 67, 132, 0.04),
+					0 2px 4px 0 rgba(0, 67, 132, 0.16);
+				border-radius: 7px;
+			}
+			.notification {
+				.overlay {
+					background: rgba(0, 0, 0, 0.2);
+				}
+				.overlay-main {
+					left: 86.5%;
+					width: 458px;
+					height: 100%;
+					overflow-y: hidden;
+					border: none;
+					border-radius: 0;
+				}
+			}
+		}
+	}
+}
+body {
+	&.noscroll {
+		position: fixed;
+		overflow: hidden;
+		width: 100%;
+	}
+}

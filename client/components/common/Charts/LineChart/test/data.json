@@ -1,0 +1,1086 @@
+[
+  {
+    "type": "overallScore",
+    "score": 68,
+    "latestScore": 72,
+    "difference": -6,
+    "compareScore": null,
+    "graphData": [
+      {
+        "label": "19/03/20",
+        "value": 67,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "20/03/20",
+        "value": 67,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "21/03/20",
+        "value": 67,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "22/03/20",
+        "value": 67,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "23/03/20",
+        "value": 67,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "24/03/20",
+        "value": 67,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "25/03/20",
+        "value": 67,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "26/03/20",
+        "value": 62,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "27/03/20",
+        "value": 67,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "28/03/20",
+        "value": 62,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "29/03/20",
+        "value": 62,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "30/03/20",
+        "value": 61,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "31/03/20",
+        "value": 63,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "01/04/20",
+        "value": 62,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "02/04/20",
+        "value": 66,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "03/04/20",
+        "value": 63,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "04/04/20",
+        "value": 64,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "05/04/20",
+        "value": 63,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "06/04/20",
+        "value": 61,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "07/04/20",
+        "value": 62,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "08/04/20",
+        "value": 63,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "09/04/20",
+        "value": 64,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "10/04/20",
+        "value": 62,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "11/04/20",
+        "value": 62,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "12/04/20",
+        "value": 62,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "13/04/20",
+        "value": 63,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "14/04/20",
+        "value": 58,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "15/04/20",
+        "value": 60,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "16/04/20",
+        "value": 63,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "17/04/20",
+        "value": 62,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "18/04/20",
+        "value": 63,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "19/04/20",
+        "value": 62,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "20/04/20",
+        "value": 63,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "21/04/20",
+        "value": 63,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "22/04/20",
+        "value": 63,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "23/04/20",
+        "value": 62,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "24/04/20",
+        "value": 62,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "25/04/20",
+        "value": 62,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "26/04/20",
+        "value": 63,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "27/04/20",
+        "value": 64,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "28/04/20",
+        "value": 63,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "29/04/20",
+        "value": 63,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "30/04/20",
+        "value": 62,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "01/05/20",
+        "value": 70,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "02/05/20",
+        "value": 70,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "03/05/20",
+        "value": 70,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "04/05/20",
+        "value": 70,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "05/05/20",
+        "value": 70,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "06/05/20",
+        "value": 70,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "07/05/20",
+        "value": 70,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "08/05/20",
+        "value": 70,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "09/05/20",
+        "value": 70,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "10/05/20",
+        "value": 70,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "11/05/20",
+        "value": 70,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "12/05/20",
+        "value": 70,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "13/05/20",
+        "value": 70,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "14/05/20",
+        "value": 70,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "15/05/20",
+        "value": 69,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "16/05/20",
+        "value": 69,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "17/05/20",
+        "value": 69,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "18/05/20",
+        "value": 69,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "19/05/20",
+        "value": 68,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "20/05/20",
+        "value": 69,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "21/05/20",
+        "value": 69,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "22/05/20",
+        "value": 69,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "23/05/20",
+        "value": 68,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "24/05/20",
+        "value": 68,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "25/05/20",
+        "value": 68,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "26/05/20",
+        "value": 68,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "27/05/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "28/05/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "29/05/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "30/05/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "31/05/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "01/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "02/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "03/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "04/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "05/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "06/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "07/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "08/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "09/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "10/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "11/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "12/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "13/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "14/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "15/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "16/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "17/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "18/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "19/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "20/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "21/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "22/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "23/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "24/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "25/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "26/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "27/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "28/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "29/06/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "30/06/20",
+        "value": 73,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "01/07/20",
+        "value": 73,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "02/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "03/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "04/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "05/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "06/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "07/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "08/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "09/07/20",
+        "value": 73,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "10/07/20",
+        "value": 74,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "11/07/20",
+        "value": 74,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "12/07/20",
+        "value": 74,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "13/07/20",
+        "value": 74,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "14/07/20",
+        "value": 74,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "15/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "16/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "17/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "18/07/20",
+        "value": 74,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "19/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "20/07/20",
+        "value": 73,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "21/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "22/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "23/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "24/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "25/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "26/07/20",
+        "value": 74,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "27/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "28/07/20",
+        "value": 65,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "29/07/20",
+        "value": 71,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "30/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "31/07/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "01/08/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "02/08/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "03/08/20",
+        "value": 69,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "04/08/20",
+        "value": 70,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "05/08/20",
+        "value": 69,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "06/08/20",
+        "value": 71,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "07/08/20",
+        "value": 74,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "08/08/20",
+        "value": 73,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "09/08/20",
+        "value": 73,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "10/08/20",
+        "value": 73,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "11/08/20",
+        "value": 74,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "12/08/20",
+        "value": 74,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "13/08/20",
+        "value": 74,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "14/08/20",
+        "value": 74,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "15/08/20",
+        "value": 73,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "16/08/20",
+        "value": 73,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "17/08/20",
+        "value": 72,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      },
+      {
+        "label": "18/08/20",
+        "value": null,
+        "compareLabel": null,
+        "compareValue": null,
+        "initialValue": null
+      }
+    ],
+    "scoreHeading": "Overall Score",
+    "scoreHelp": "Weighted average score of all Content attributes -Text, Visual, Feedback & Sales Accelerator",
+    "latestScoreHeading": "LATEST SCORE",
+    "latestScoreHelp": "Your most recent Content score"
+  }
+]

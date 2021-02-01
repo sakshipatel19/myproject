@@ -1,0 +1,149 @@
+.pagination-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 50px;
+	.button {
+		cursor: pointer;
+		height: 34px;
+		border: none;
+		background-color: #fff;
+		color: #858585;
+		width: 34px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		outline: none;
+		letter-spacing: 1px;
+		&:disabled {
+			cursor: default;
+			color: #e7e7e7;
+			&:hover {
+				box-shadow: none;
+				cursor: not-allowed;
+			}
+		}
+		.goto-right-hover,
+		.arrowCircleRight,
+		.arrowCircleLeft {
+			display: none;
+		}
+		&:hover {
+			color: #0676ed;
+			.right,
+			.left,
+			.goto-right {
+				display: none;
+			}
+			.goto-right-hover,
+			.arrowCircleRight {
+				height: 24px;
+				width: 24px;
+				display: flex;
+				align-content: center;
+				justify-content: center;
+			}
+			.arrowCircleLeft {
+				height: 24px;
+				width: 24px;
+				display: inline-block;
+			}
+		}
+		.right-disabled,
+		.left-disabled {
+			cursor: not-allowed;
+		}
+	}
+
+	.pagination-buttons-container {
+		display: flex;
+		flex-direction: row;
+		margin-right: 30px;
+
+		.pagination-button {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			color: #212129;
+			font-family: "NotoSans-Regular";
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 20px;
+
+			.button.active-btn {
+				font-family: "NotoSans-SemiBold";
+				background-color: #0676ed;
+				border: none;
+				border-radius: 15%;
+				width: 34px;
+				height: 34px;
+				color: #ffff;
+				outline: none;
+			}
+		}
+	}
+	.go-to-page-container {
+		display: flex;
+		flex-direction: row;
+		margin-left: 30px;
+		.goto {
+			display: flex;
+			color: #858585;
+			font-family: "NotoSans-Regular";
+			font-size: 10px;
+			font-weight: 500;
+			letter-spacing: 1px;
+			line-height: 14px;
+			align-items: center;
+			justify-content: center;
+		}
+		.goto-input {
+			width: 40px;
+			height: 30px;
+			background: #ffff;
+			outline: none;
+			border: 1px solid #e7e7e7;
+			border-radius: 3px;
+			margin: 0px 15px;
+			color: #212129;
+			text-align: center;
+			font-family: "NotoSans-Regular";
+			font-size: 14px;
+		}
+
+		.goto-inupt-error {
+			border-bottom-color: #ff7a77;
+		}
+
+		.goto-input::-webkit-inner-spin-button,
+		.goto-input::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+			-moz-appearance: textfield;
+			margin: 0;
+		}
+		.goto-right-disabled {
+			opacity: 0.5;
+			cursor: not-allowed;
+		}
+	}
+}
+.pagination-error {
+	display: flex;
+	align-content: center;
+	justify-content: flex-end;
+	color: #ff7a77;
+	font-family: "GothamNarrow-Book";
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 18px;
+	padding-top: 10px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}

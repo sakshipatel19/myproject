@@ -1,0 +1,26 @@
+.inPageNavigation-container {
+	display: flex;
+	font-family: "NotoSans-Regular";
+	font-weight: normal;
+	font-size: 12px;
+	letter-spacing: 0;
+	line-height: 18px;
+	margin-top: 5px;
+	.dot-container {
+		margin: 0 12px;
+	}
+
+	.inPageNavigation-link:first-child .inPageNavigation-link-item {
+		color: #0676ed;
+	}
+
+	.inPageNavigation-link-item:hover {
+		text-decoration: none;
+		color: #0676ed;
+		cursor: pointer;
+	}
+
+	.inPageNavigation-link-item {
+		color: #212129;
+	}
+}

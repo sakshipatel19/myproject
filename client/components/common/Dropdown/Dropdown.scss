@@ -1,0 +1,75 @@
+.dropdown-container {
+	width: 120px;
+	cursor: pointer;
+	color: #212129;
+
+	.dropdown-main-menu-container {
+		border: 1px solid #e7e7e7;
+		border-radius: 7px;
+		margin-top: -30px;
+		background-color: #ffffff;
+		box-shadow: 0 20px 60px -22px rgba(0, 67, 132, 0.3);
+		overflow: hidden;
+		.dropdown-open-indicator {
+			top: 12px;
+			right: 12px;
+			box-sizing: initial;
+			position: absolute;
+		}
+		.dropdown-menu-list {
+			overflow-y: auto;
+			overflow-x: hidden;
+			padding: 0;
+
+			&::-webkit-scrollbar {
+				width: 5px;
+				background-color: #fff;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: #ccc;
+				border-radius: 10px;
+			}
+			.dropdown-option {
+				background: #fff;
+				padding: 7px 10px 8px 10px;
+				cursor: pointer;
+				&:hover {
+					background-color: #def6ff;
+				}
+			}
+			.select-option-label {
+				padding-right: 14px;
+			}
+		}
+	}
+
+	.select-option-container {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		.select-option-image {
+			height: 14px;
+			width: 24px;
+		}
+		.select-option-label,
+		.select-option-label-image {
+			font-size: 12px;
+			font-family: "NotoSans-Regular";
+			color: #212129;
+		}
+		.select-option-label-image {
+			margin-left: 15px;
+		}
+
+		&.selected {
+			.select-option-label,
+			.select-option-label-image {
+				font-family: "NotoSans-SemiBold";
+			}
+		}
+	}
+}
+
+.dropdown-container-disabled {
+	color: #858585;
+}

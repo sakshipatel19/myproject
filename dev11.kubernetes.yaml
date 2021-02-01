@@ -1,0 +1,66 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ci-ui-config
+data:
+  APP_ENV: "production"
+  AUTH0_DOMAIN: "gskcomint.auth0.com"
+  AUTH0_AUDIENCE: "https://gskcomint.auth0.com/api/v2/"
+  AUTH0_CLIENT_ID: "NJkqJZAjM8F4pEQl8PAyyn8qn0LKHRTm"
+  AUTH0_REDIRECT_URI: "https://dev11new.commerceintelligence.ai/callback"
+  AUTH0_LOGOUT_URI: "https://dev11new.commerceintelligence.ai"
+  AUTH0_RESPONSE_TYPE: "token id_token"
+  AUTH0_SCOPE: "openid profile"
+  MICROSERVICE_URL: "https://dev11.commerceintelligence.ai"
+  CLIENT_ID: "gsk"
+  CLIENT_LOGO: "https://images.commerceintelligence.ai/gsk/company-logo/logo.svg"
+  SCRAPING_START_DATE: "2020-03-19"
+
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: commerce-intelligence-ui-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: commerce-intelligence-ui
+  template:
+    metadata:
+      labels:
+        app: commerce-intelligence-ui
+    spec:
+      containers:
+        - name: commerce-intelligence-ui
+          image: eu.gcr.io/publicismedia-cortex-216901/jenkins-comint-ui-dashboard:image_version # don't change "jenkins-comint-ui-dashboard:image_version"             #v1
+          imagePullPolicy: Always
+          envFrom:
+            - configMapRef:
+                name: ci-ui-config
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              memory: 2Gi
+              cpu: 1
+            limits:
+              memory: 4Gi
+              cpu: 2
+      restartPolicy: Always
+      nodeSelector:
+        cloud.google.com/gke-nodepool: dev11-app-nodepool
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: commerce-intelligence-ui-service
+spec:
+  type: NodePort
+  ports:
+    - port: 8082
+      targetPort: 8080
+      protocol: TCP
+  selector:
+    app: commerce-intelligence-ui

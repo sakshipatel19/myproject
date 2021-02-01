@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BrandTable tests BrandTable should render correctly 1`] = `
+<div
+  className="brand-type-container"
+>
+  <div
+    className="brand-type-heading-container"
+  >
+    <Label
+      text="Brands"
+    />
+    <div
+      className="download-icon"
+    >
+      <Icon
+        name="download"
+        size={16}
+      />
+    </div>
+  </div>
+  <div
+    className="brand-type-detailpage-container"
+  >
+    <div
+      className="detail-page"
+    >
+      <BrandTableDetailPage
+        compareSelected={false}
+        data={null}
+        fetchBrands={[MockFunction]}
+      />
+    </div>
+  </div>
+</div>
+`;

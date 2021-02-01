@@ -1,0 +1,234 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CatalogHealthDetail /> CatalogHealthDetail invoke DataRowComponent negative case 1`] = `
+<tr
+  className="aligncenter"
+>
+  <td
+    className="table-cell-product-name"
+  >
+    <div>
+      Advil
+    </div>
+    <div
+      className="table-cell-product-code"
+    >
+      B000GGO2QG
+    </div>
+  </td>
+  <td>
+    Medications
+  </td>
+  <td
+    className="table-cell-score"
+  >
+    17%
+  </td>
+  <td>
+    <div
+      className="dot-container undefined"
+    >
+      <svg
+        height={12}
+        width={12}
+      >
+        <circle
+          cx={6}
+          cy={6}
+          fill="#0FBD8C"
+          r={6}
+        />
+      </svg>
+      <span
+        className="dot-text"
+      />
+    </div>
+    <span
+      className="catalog-detail-score-value"
+      style={
+        Object {
+          "color": "#0FBD8C",
+        }
+      }
+    >
+      93%
+    </span>
+  </td>
+  <td>
+    <div
+      className="dot-container undefined"
+    >
+      <svg
+        height={12}
+        width={12}
+      >
+        <circle
+          cx={6}
+          cy={6}
+          fill="#FF647C"
+          r={6}
+        />
+      </svg>
+      <span
+        className="dot-text"
+      />
+    </div>
+    <span
+      className="catalog-detail-score-value"
+      style={
+        Object {
+          "color": "#FF647C",
+        }
+      }
+    >
+      23%
+    </span>
+  </td>
+  <td>
+    <div
+      className="dot-container undefined"
+    >
+      <svg
+        height={12}
+        width={12}
+      >
+        <circle
+          cx={6}
+          cy={6}
+          fill="#FF647C"
+          r={6}
+        />
+      </svg>
+      <span
+        className="dot-text"
+      />
+    </div>
+    <span
+      className="catalog-detail-score-value"
+      style={
+        Object {
+          "color": "#FF647C",
+        }
+      }
+    >
+      1%
+    </span>
+  </td>
+</tr>
+`;
+
+exports[`<CatalogHealthDetail /> CatalogHealthDetail invoke DataRowComponent negative case 2`] = `
+<tr
+  className="aligncenter"
+>
+  <td
+    className="table-cell-product-name"
+  >
+    <div>
+      Advil
+    </div>
+    <div
+      className="table-cell-product-code"
+    >
+      B000GGO2QG
+    </div>
+  </td>
+  <td>
+    Medications
+  </td>
+  <td
+    className="table-cell-score"
+  >
+    17%
+  </td>
+  <td>
+    <img
+      className="icon-class "
+      height={12}
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      src={
+        Object {
+          "canInstrument": true,
+          "createTransformer": [Function],
+          "getCacheKey": [Function],
+          "process": [Function],
+        }
+      }
+      title=""
+      width={12}
+    />
+    <span
+      className="catalog-detail-score-value"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+    >
+      NA
+    </span>
+  </td>
+  <td>
+    <div
+      className="dot-container undefined"
+    >
+      <svg
+        height={12}
+        width={12}
+      >
+        <circle
+          cx={6}
+          cy={6}
+          fill="#FF647C"
+          r={6}
+        />
+      </svg>
+      <span
+        className="dot-text"
+      />
+    </div>
+    <span
+      className="catalog-detail-score-value"
+      style={
+        Object {
+          "color": "#FF647C",
+        }
+      }
+    >
+      23%
+    </span>
+  </td>
+  <td>
+    <div
+      className="dot-container undefined"
+    >
+      <svg
+        height={12}
+        width={12}
+      >
+        <circle
+          cx={6}
+          cy={6}
+          fill="#FF647C"
+          r={6}
+        />
+      </svg>
+      <span
+        className="dot-text"
+      />
+    </div>
+    <span
+      className="catalog-detail-score-value"
+      style={
+        Object {
+          "color": "#FF647C",
+        }
+      }
+    >
+      1%
+    </span>
+  </td>
+</tr>
+`;

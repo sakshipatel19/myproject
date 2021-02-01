@@ -1,0 +1,9 @@
+.git
+node_modules
+build
+auth0-templates
+.vscode
+Dockerfile
+.dockerignore
+.eslintrc
+.prettierignore

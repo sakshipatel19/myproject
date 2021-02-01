@@ -1,0 +1,84 @@
+@import "../../../../styles/colors.scss";
+.bar-chart-container {
+	.svg-content-responsive {
+		display: inline-block;
+		.bar-group {
+			.xaxis-label {
+				fill: #212129;
+				font-family: "NotoSans-Regular";
+				font-size: 8px;
+			}
+			&:hover {
+				.highlight {
+					fill: #ebf4fe;
+				}
+				.tool-tip,
+				.tool-tip-anchor {
+					opacity: 1;
+					transition: opacity 0.3s;
+				}
+			}
+			.tool-tip {
+				opacity: 0;
+				.tool-tip-text {
+					font-size: 10px;
+					font-family: "NotoSans-Regular";
+					fill: #fff;
+					&.score-diff {
+						fill: #ff625e;
+						&.up {
+							fill: #0c926b;
+						}
+						&.zero {
+							fill: #fff;
+						}
+						&.na {
+							fill: #d5d5d5;
+						}
+					}
+				}
+				.trend {
+					fill: #ff625e;
+					&.up {
+						fill: #0c926b;
+					}
+				}
+			}
+			.tool-tip-anchor {
+				opacity: 0;
+			}
+			.tool-tip-text.score:before {
+				content: " ";
+				width: 10px;
+				height: 10px;
+				background-color: #4ca0fa;
+			}
+			.action-icon-group {
+				cursor: pointer;
+				path,
+				polygon {
+					fill: #d5d5d5;
+				}
+				&.actionable {
+					path {
+						fill: #212129;
+					}
+				}
+			}
+		}
+		.bar-wrap {
+			.section-title,
+			.section-highlight {
+				fill: #f2f2f2;
+				opacity: 0.7;
+				&.light-shade {
+					opacity: 0.4;
+				}
+			}
+			.section-title-text {
+				font-size: 10px;
+				font-weight: bold;
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 62 (101010) - https://sketch.com -->
+    <title>4B859B2C-A3EC-49EF-A8CF-6AF2FC2C61AE</title>
+    <desc>Created with sketchtool.</desc>
+        <g id="Checkbox-Selected">
+            <rect id="Checkbox" stroke="#16ABE0" fill="#FFFFFF" x="0.5" y="0.5" width="15" height="15" rx="2"></rect>
+            <g id="Icons/General/Check" transform="translate(3.333333, 3.333333)" fill="#16ABE0">
+                <g id="Tick" transform="translate(0.000000, 1.166667)">
+                    <path d="M9.11327481,1.3231297 L3.87904342,6.76719641 C3.58760515,7.0702922 3.12130391,7.0702922 2.82986564,6.76719641 L0.218578705,4.02767676 C-0.0728595684,3.72458097 -0.0728595684,3.23496469 0.218578705,2.9318689 C0.510016979,2.62877311 0.976318216,2.62877311 1.26775649,2.9318689 L3.36611206,5.12348462 L8.07575456,0.227321843 C8.36719283,-0.0757739477 8.83349407,-0.0757739477 9.12493234,0.227321843 C9.40471309,0.530417634 9.40471309,1.02003391 9.11327481,1.3231297 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+</svg>

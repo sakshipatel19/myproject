@@ -1,0 +1,73 @@
+.svg-content-responsive {
+	display: inline-block;
+	.bar-group {
+		.xaxis-label {
+			fill: #212129;
+			font-family: "NotoSans-Regular";
+			font-size: 10px;
+		}
+		&:hover {
+			.highlight {
+				fill: #ebf4fe;
+			}
+			.tool-tip,
+			.tool-tip-text,
+			.tool-tip-sum-text,
+			.tool-tip-dot,
+			.tool-tip-anchor {
+				opacity: 1;
+				transition: opacity 0.5s;
+			}
+		}
+		.tool-tip,
+		.type-tool-tip,
+		.tool-tip-text,
+		.tool-tip-sum-text,
+		.tool-tip-dot,
+		.tool-tip-anchor {
+			opacity: 0;
+		}
+		.type-tool-tip {
+			transition: opacity 0.5s;
+		}
+		.tool-tip-sum-text,
+		.type-tool-tip-text,
+		.tool-tip-text {
+			font-size: 10px;
+			font-family: "NotoSans-Regular";
+			fill: #fff;
+		}
+	}
+}
+.stackedbar-chart-container {
+	margin-top: 30px;
+}
+.stackedbar-legends {
+	display: flex;
+	margin-top: 30px;
+	.legend-item {
+		display: flex;
+		padding: 5px;
+		margin-right: 10px;
+		&:hover {
+			background-color: #ebf4fe;
+		}
+		.indicator {
+			width: 12px;
+			height: 12px;
+			border-radius: 2px;
+			margin-right: 2px;
+		}
+		.score {
+			background-color: #4ca0fa;
+		}
+		.compare {
+			background-color: #f79764;
+			margin-right: 6px;
+		}
+		.legend-name {
+			font-size: 10px;
+			font-family: "NotoSans-Condensed";
+		}
+	}
+}

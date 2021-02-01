@@ -1,0 +1,59 @@
+@import "../../../styles/colors.scss";
+
+.tab-outer-container {
+	border-bottom: 2px solid $tabContainerBorderBottom;
+	display: inline-flex;
+	font-family: "NotoSans-SemiBold";
+	font-size: 14px;
+	letter-spacing: 0;
+	line-height: 20px;
+	color: $primaryBlackColor;
+	.selected {
+		color: $linkSelectedColor;
+		position: relative;
+	}
+
+	.selected::before {
+		content: "";
+		position: absolute;
+		width: 40px;
+		bottom: 0;
+		left: 0;
+		border-bottom: 2px solid $linkSelectedColor;
+		margin-bottom: -2px;
+	}
+
+	.tab-no-of-records {
+		font-size: 12px;
+		letter-spacing: 0;
+		line-height: 18px;
+		font-family: "NotoSans-Regular";
+		padding: 2px;
+		color: $primaryBlackColor;
+	}
+	.tab-details {
+		padding-bottom: 12px;
+		cursor: pointer;
+		margin-right: 30px;
+	}
+	.tab-details:last-child {
+		margin-right: 0;
+	}
+	.tab-details:last-child {
+		margin-right: 0;
+	}
+
+	.tab-name {
+		margin-right: 10px;
+	}
+	.tab-details:hover {
+		.tab-name {
+			color: $tabTextHover;
+		}
+	}
+	.tab-details.selected:hover {
+		.tab-name {
+			color: $linkSelectedColor;
+		}
+	}
+}

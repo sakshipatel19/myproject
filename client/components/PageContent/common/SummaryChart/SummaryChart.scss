@@ -1,0 +1,314 @@
+@import "../../../../styles/colors.scss";
+
+.overall-score-container {
+	padding: 20px 35px;
+	min-height: 300px;
+	display: block;
+	margin-bottom: 32px;
+	box-shadow: 0 20px 60px -22px rgba(0, 67, 132, 0.3);
+	.overall-score-content {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		min-height: 260px;
+		.data-load-error-container {
+			justify-items: center;
+			min-height: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.individual-score-container {
+	display: flex;
+	margin-top: 10px;
+	flex-wrap: wrap;
+	.individual-score-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+}
+.individual-scores {
+	display: flex;
+	flex-wrap: nowrap;
+	margin-right: 25px;
+	margin-bottom: 5px;
+	&:last-child {
+		margin-right: 0px;
+	}
+	border-radius: 9px;
+	box-shadow: 0 1px 8px 0 rgba(0, 67, 132, 0.04),
+		0 16px 24px 0 rgba(0, 67, 132, 0.16);
+
+	.individual-score-section-container {
+		&.childPresent {
+			border-radius: 9px 0 0 9px;
+		}
+		&.childAbsent {
+			border-radius: 9px;
+		}
+		cursor: pointer;
+		border: 1px solid transparent;
+		&:hover {
+			border: 1px solid $hoverBorderColor;
+		}
+		&.individual-score-selected {
+			background-color: $scoreSelectedColor;
+			.individual-score-section {
+				background-color: $scoreSelectedColor;
+			}
+			display: flex;
+			cursor: default;
+			&:hover {
+				border: 1px solid transparent;
+				border-radius: 9px;
+			}
+
+			.individual-score-values {
+				font-family: "NotoSans-SemiBold";
+				font-size: 28px;
+				letter-spacing: 1px;
+				flex-direction: column;
+				margin-bottom: 5px;
+				.dot-container {
+					.dot-text {
+						font-family: "NotoSans-Regular";
+						font-size: 18px;
+					}
+				}
+			}
+		}
+		&.individual-score-comare {
+			.individual-score-content {
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 10px;
+				.individual-score-vertical-separator {
+					height: 40px;
+					background-color: $borderColor;
+				}
+			}
+		}
+
+		&.individual-score-section-tagged {
+			.individual-score-header,
+			.individual-score-values,
+			.individual-latest-scores {
+				margin-left: 8px;
+			}
+		}
+	}
+	.individual-score-brand-compare-view {
+		align-items: center;
+		height: 50px;
+		width: 168px;
+		flex-direction: row;
+		justify-content: center;
+		.score-section-content {
+			justify-content: center;
+			align-items: center;
+			.individual-score-header {
+				margin: 0;
+			}
+		}
+		.individual-score-section {
+			height: 100%;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
+
+.individual-score-section {
+	display: flex;
+	flex-direction: row;
+	height: 128px;
+	width: 168px;
+	box-shadow: none;
+	.colorbar {
+		flex-direction: column;
+		min-width: 10px;
+		height: 100%;
+	}
+	.colorbar > *:first-child {
+		border-radius: 10px 0 0 0;
+	}
+	.colorbar > *:last-child {
+		border-radius: 0 0 0 10px;
+	}
+	.score-section-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		color: $primaryBlackColor;
+		font-family: "NotoSans-Regular";
+		font-size: 14px;
+		.individual-score-header {
+			margin-top: 18px;
+			color: $primaryBlackColor;
+			margin-left: 18px;
+		}
+		.individual-score-tag-container {
+			position: absolute;
+			top: 4px;
+			right: 4px;
+			&:hover {
+				.individual-score-tag {
+					display: none;
+				}
+				.individual-score-tag-hover {
+					display: inline;
+				}
+			}
+			.individual-score-tag {
+				display: inline;
+			}
+
+			.individual-score-tag-hover {
+				display: none;
+			}
+		}
+
+		.individual-latest-scores {
+			display: flex;
+			font-family: "NotoSans-SemiBold";
+			font-size: 18px;
+			margin: 10px 0 15px 18px;
+		}
+
+		.individual-score-chart {
+			width: 100%;
+			margin-bottom: 4px;
+		}
+		.individual-score-values {
+			font-size: 22px;
+			margin-top: 6px;
+			margin-left: 18px;
+			display: flex;
+			.dot-container {
+				margin-right: 17px;
+				display: inline-flex;
+				align-items: center;
+				.dot-text {
+					font-family: "NotoSans-Regular";
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+.child-scores-container {
+	display: flex;
+	.child-score-section-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;
+		height: 128px;
+		width: 120px;
+		color: $primaryBlackColor;
+		font-family: "NotoSans-Regular";
+		font-size: 14px;
+		border: 1px solid transparent;
+		border-left: 3px solid $tabContainerBorderBottom;
+		height: 100%;
+		cursor: pointer;
+		&:hover {
+			border: 1px solid $hoverBorderColor;
+			padding-left: 2px;
+		}
+		&.child-score-section-tagged {
+			.child-score-content {
+				margin-left: -2px;
+			}
+		}
+		&.child-score-selected {
+			background-color: $scoreSelectedColor;
+			cursor: default;
+			&:hover {
+				padding-left: 0;
+				border: 1px solid transparent;
+				border-left: 3px solid $tabContainerBorderBottom;
+			}
+		}
+		&.child-score-compare {
+			.child-score-content {
+				.child-score-values {
+					margin-left: 14px;
+					.dot-container {
+						margin-right: 9px;
+						display: inline-flex;
+						align-items: center;
+					}
+				}
+			}
+		}
+
+		.child-score-content {
+			text-align: center;
+			.child-score-heading {
+				font-size: 14px;
+			}
+			.child-score-values {
+				font-family: "NotoSans-SemiBold";
+				font-size: 18px;
+				margin-top: 10px;
+				margin-bottom: 12px;
+				.dot-container {
+					margin-right: 17px;
+					.dot-text {
+						font-family: "NotoSans-Regular";
+						font-size: 18px;
+					}
+				}
+			}
+		}
+		.child-score-header {
+			margin-top: 18px;
+			color: $primaryBlackColor;
+			margin-left: 18px;
+		}
+		.individual-score-tag-container {
+			position: absolute;
+			top: 4px;
+			right: 4px;
+			&:hover {
+				.individual-score-tag {
+					display: none;
+				}
+				.individual-score-tag-hover {
+					display: inline;
+				}
+			}
+			.individual-score-tag {
+				display: inline;
+			}
+
+			.individual-score-tag-hover {
+				display: none;
+			}
+		}
+	}
+	.child-close-container {
+		align-items: center;
+		font-family: "NotoSans-SemiBold";
+		cursor: default;
+		&:hover {
+			padding-left: 0;
+			border: 1px solid transparent;
+			border-left: 3px solid $tabContainerBorderBottom;
+		}
+	}
+	.close-score-tag {
+		margin-bottom: 7px;
+	}
+}

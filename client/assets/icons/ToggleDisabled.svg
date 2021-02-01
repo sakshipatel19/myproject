@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="14px" viewBox="0 0 24 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>F08F7B01-E151-4C05-80F6-369158EA11EF</title>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style-Guide---Iconography" transform="translate(-572.000000, -325.000000)">
+            <g id="Icons/Selector/Checbox/Normal" transform="translate(572.000000, 325.000000)">
+                <path d="M16.9936892,0.5 C18.748978,0.5 20.3418885,1.19625678 21.5122426,2.32609175 C22.6858995,3.45911517 23.4348613,5.02819709 23.4959412,6.76901194 C23.4956284,8.66535806 22.7790846,10.3404011 21.6134593,11.5456333 C20.4356389,12.763475 18.8005237,13.5 16.9936892,13.5 L16.9936892,13.5 L7.00631082,13.5 C5.21052426,13.5 3.58470591,12.7712344 2.40743226,11.5950212 C1.22910547,10.4177557 0.5,8.79215207 0.5,7 C0.5,5.20521461 1.22832028,3.58036006 2.40559172,2.40414903 C3.58314183,1.22765958 5.20985014,0.5 7.00631082,0.5 L7.00631082,0.5 Z" id="Background" stroke="#858585" fill="#FFFFFF"></path>
+                <circle id="Oval" fill="#858585" cx="17" cy="7" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

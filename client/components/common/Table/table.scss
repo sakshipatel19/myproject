@@ -1,0 +1,123 @@
+@import "../../../styles/colors.scss";
+
+.common-table-container {
+	border-bottom: 2px solid #f2f2f2;
+	width: 100%;
+	letter-spacing: 1px;
+	text-align: left;
+	border-collapse: collapse;
+	box-sizing: border-box;
+	text-align: left;
+
+	th,
+	td {
+		border-bottom: 2px solid #f2f2f2;
+		padding: 10px;
+		font-weight: normal;
+	}
+
+	tbody tr:hover {
+		background-color: $scoreSelectedColor;
+	}
+
+	.columnSortable {
+		cursor: pointer;
+	}
+
+	.columnSortable:hover {
+		color: $linkSelectedColor;
+	}
+
+	.aligncenter {
+		text-align: center;
+	}
+
+	.remove-table-border {
+		border-bottom: 0;
+	}
+
+	.selected-row {
+		background-color: #f8fdff;
+	}
+
+	thead .sortSlelected {
+		color: $linkSelectedColor;
+	}
+
+	tr td:last-child tr th:last-child {
+		padding-right: 10px;
+	}
+
+	thead tr:last-child th {
+		padding-bottom: 10px;
+	}
+
+	.number-text {
+		padding-right: 20px;
+		text-align: right;
+	}
+
+	thead {
+		font-size: 12px;
+		font-family: "NotoSans-Condensed";
+		color: $primaryBlackColor;
+		letter-spacing: 0;
+		line-height: 18px;
+		vertical-align: bottom;
+		.table-sort-image {
+			height: 8px;
+			width: 8px;
+			padding-left: 3px;
+			width: auto;
+			vertical-align: middle;
+		}
+		.external-icon {
+			margin-left: 10px;
+		}
+	}
+
+	.table-cell-show-compare-data {
+		display: flex;
+		flex-direction: column;
+		align-content: flex-end;
+		&.number-text-compare {
+			align-items: flex-end;
+		}
+
+		.compare-data-compare-values {
+			margin-top: 10px;
+		}
+		.compare-data-compare-values:first-child {
+			margin-top: 0px;
+		}
+
+		.compare-data-compare-values,
+		.compare-data-compare-values-compare {
+			display: flex;
+			align-items: center;
+			span {
+				vertical-align: middle;
+				margin-top: 0;
+			}
+		}
+	}
+
+	.table-checkbox-cell {
+		width: 3%;
+		padding-right: 5px;
+		.checkbox-item {
+			padding: 0;
+		}
+	}
+
+	td {
+		padding-top: 12px;
+		padding-bottom: 10px;
+		font-size: 14px;
+		font-family: "NotoSans-Regular";
+		margin: 20px 0;
+		color: $primaryBlackColor;
+		line-height: 20px;
+		letter-spacing: 0;
+	}
+}

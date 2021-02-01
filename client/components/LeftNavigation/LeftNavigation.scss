@@ -1,0 +1,129 @@
+.left-navigation-main-container {
+	z-index: 2;
+	position: fixed;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	background-color: #08243f;
+	.left-nav-overlay-container {
+		display: block;
+		width: 163px;
+		background-color: #10294c;
+		.left-nav-overlay {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			height: 100%;
+			.logo-text {
+				height: 98px;
+				padding-top: 20px;
+				color: #fff;
+				width: 100%;
+				font-family: "NotoSans-SemiBold";
+				font-size: 12px;
+				letter-spacing: 0;
+				line-height: 20px;
+				background-color: #08243f;
+			}
+			.left-nav-overlay-sub-routes-container {
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				.route-heading {
+					color: #858585;
+					font-family: "NotoSans-SemiBold";
+					font-size: 14px;
+					letter-spacing: 0;
+					line-height: 20px;
+					padding: 20px;
+				}
+				.sub-route-container {
+					.sub-route-link {
+						text-decoration: none;
+						&:hover {
+							text-decoration: none;
+						}
+					}
+					.sub-route {
+						padding-left: 30px;
+						color: #ffffff;
+						font-family: "NotoSans-Regular";
+						font-size: 14px;
+						letter-spacing: 0;
+						line-height: 20px;
+						display: flex;
+						align-self: start;
+						padding-top: 14px;
+						padding-bottom: 14px;
+						outline: none;
+						cursor: pointer;
+						width: 100%;
+						&:hover {
+							background-color: #15305c;
+						}
+					}
+					.selected {
+						background-color: #15305c;
+						font-family: "NotoSans-Bold";
+					}
+					.sub-route-heading {
+						padding-left: 30px;
+						color: #858585;
+						font-family: "NotoSans-Regular";
+						font-size: 10px;
+						letter-spacing: 1px;
+						line-height: 14px;
+						padding-top: 20px;
+						padding-bottom: 15px;
+					}
+					.sub-route-header {
+						padding-left: 30px;
+						color: #ffffff;
+						font-family: "NotoSans-Regular";
+						font-size: 14px;
+						letter-spacing: 0;
+						line-height: 20px;
+						padding-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	.left-nav-main-routes {
+		width: 70px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 15px;
+		.ci-logo {
+			// padding: 0px 20px 40px 20px;
+			padding-bottom: 43px;
+		}
+		.left-nav-main-route {
+			padding: 15px 25px 0px 25px;
+			margin-bottom: 20px;
+			width: 100%;
+			height: 60px;
+			cursor: pointer;
+			.hover-nav-text {
+				color: #ffffff;
+				display: flex;
+				font-family: "NotoSans-Condensed";
+				font-size: 12px;
+				letter-spacing: 0;
+				line-height: 18px;
+				justify-content: center;
+			}
+			&:hover {
+				background-color: #10294c;
+			}
+		}
+		.hoverd {
+			background-color: #10294c;
+		}
+		.close-left-nav {
+			margin-top: 60px;
+		}
+	}
+}

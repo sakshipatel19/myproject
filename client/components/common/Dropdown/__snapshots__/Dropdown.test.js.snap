@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown Load testing Dropdown Render correctly 1`] = `
+<StateManager
+  className="dropdown-container"
+  components={
+    Object {
+      "DropdownIndicator": [Function],
+      "IndicatorSeparator": null,
+      "Menu": [Function],
+      "MenuList": [Function],
+      "Option": [Function],
+    }
+  }
+  data-test="dropdown-component"
+  defaultInputValue=""
+  defaultMenuIsOpen={false}
+  defaultValue={
+    Object {
+      "label": <div
+        className="select-option-container "
+      >
+        <span
+          className="select-option-label"
+        >
+          test1
+        </span>
+      </div>,
+      "value": 1,
+    }
+  }
+  isDisabled={false}
+  isSearchable={false}
+  onChange={[Function]}
+  options={
+    Array [
+      Object {
+        "label": <div
+          className="select-option-container "
+        >
+          <span
+            className="select-option-label"
+          >
+            test1
+          </span>
+        </div>,
+        "value": 1,
+      },
+      Object {
+        "label": <div
+          className="select-option-container "
+        >
+          <span
+            className="select-option-label"
+          >
+            test2
+          </span>
+        </div>,
+        "value": 2,
+      },
+      Object {
+        "label": <div
+          className="select-option-container "
+        >
+          <span
+            className="select-option-label"
+          >
+            test3
+          </span>
+        </div>,
+        "value": 3,
+      },
+    ]
+  }
+  placeholder=""
+  styles={
+    Object {
+      "control": [Function],
+    }
+  }
+/>
+`;

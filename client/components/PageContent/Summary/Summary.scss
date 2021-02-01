@@ -1,0 +1,26 @@
+@import "../../../styles/colors.scss";
+
+.promotion-container,
+.attributes-container {
+	margin-bottom: 30px;
+	.loading-square {
+		width: 100%;
+		min-height: 200px;
+	}
+}
+.attributes-container {
+	.card-header {
+		margin-bottom: 30px;
+	}
+}
+.common-table-container {
+	tr.attribute-section-title-row {
+		background-color: $brandCompareKeywordTableFirstRow;
+		&:hover {
+			background-color: $brandCompareKeywordTableFirstRow;
+		}
+		.attribute-name {
+			font-family: "NotoSans-SemiBold";
+		}
+	}
+}

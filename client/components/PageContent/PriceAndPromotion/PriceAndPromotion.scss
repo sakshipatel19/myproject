@@ -1,0 +1,86 @@
+@import "../../../styles/colors.scss";
+
+.promo-main-container {
+	margin-bottom: 50px;
+	.promotion-count-type-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		.promotion-count-container {
+			padding-top: 30px;
+			flex: 1;
+			.promotion-count-compare {
+				.dot-text {
+					padding-right: 30px;
+					color: $primaryBlackColor;
+					font-family: "NotoSans-Regular";
+					font-size: 22px;
+					letter-spacing: 0;
+					line-height: 32px;
+				}
+			}
+			.promotion-count {
+				color: $primaryBlackColor;
+				font-family: "NotoSans-Bold";
+				font-size: 28px;
+				letter-spacing: 1px;
+				line-height: 42px;
+			}
+			.promotion-count-desc {
+				width: 225px;
+				margin-top: 20px;
+				border-right: 1px solid #e7e7e7;
+				padding-right: 50px;
+				color: $primaryBlackColor;
+				font-family: "NotoSans-Regular";
+				font-size: 12px;
+				letter-spacing: 0;
+				line-height: 18px;
+			}
+		}
+		.promotion-type-container {
+			flex: 2;
+			margin-top: 45px;
+			margin-left: 40px;
+			.promotion-type-heading {
+				color: $primaryBlackColor;
+				font-family: "NotoSans-SemiBold";
+				font-size: 14px;
+				letter-spacing: 0;
+				line-height: 20px;
+			}
+
+			.promotion-types {
+				display: grid;
+				grid-template-columns: auto auto;
+				.types {
+					.heading {
+						padding-bottom: 10px;
+						color: $primaryBlackColor;
+						font-family: "NotoSans-Regular";
+						font-size: 12px;
+						letter-spacing: 0;
+						line-height: 18px;
+					}
+					padding: 15px 35px 20px 0px;
+					.promotion-type-count {
+						padding-right: 30px;
+						.dot-text {
+							font-family: "NotoSans-Regular";
+							font-size: 18px;
+							letter-spacing: 0;
+							line-height: 26px;
+						}
+					}
+					.count {
+						color: $primaryBlackColor;
+						font-family: "NotoSans-SemiBold";
+						font-size: 18px;
+						letter-spacing: 0;
+						line-height: 26px;
+					}
+				}
+			}
+		}
+	}
+}

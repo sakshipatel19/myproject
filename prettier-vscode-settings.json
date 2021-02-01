@@ -1,0 +1,16 @@
+{
+	"files.autoSave": "onFocusChange",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnType": true,
+	"editor.autoClosingQuotes": "always",
+	"editor.autoIndent": "keep",
+	"prettier.jsxSingleQuote": true,
+	"prettier.tabWidth": 2,
+	"prettier.useTabs": true,
+	"prettier.breakProperty": true,
+	"prettier.singleQuote": true,
+	"prettier.proseWrap": "always",
+	"prettier.flattenTernaries": true,
+	"prettier.printWidth": 80,
+	"editor.formatOnSave": true
+}

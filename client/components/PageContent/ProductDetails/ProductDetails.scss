@@ -1,0 +1,78 @@
+@import "../../../styles/colors.scss";
+
+.product-info-container {
+	margin-bottom: 40px;
+	.card-container {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		min-height: 110px;
+		.dot-pulse {
+			top: 5vh;
+		}
+	}
+	.product-info {
+		display: flex;
+		.product-image {
+			height: 80px;
+			width: 43px;
+			margin-left: 23px;
+			pointer-events: none;
+		}
+		.product-description {
+			margin-left: 58px;
+			color: #212129;
+			font-size: 14px;
+			letter-spacing: 0;
+			line-height: 20px;
+			padding-right: 40px;
+			.product-id {
+				font-family: "NotoSans-SemiBold";
+				font-weight: 600;
+			}
+			.product-title {
+				margin-top: 10px;
+				font-family: "NotoSans-Regular";
+			}
+		}
+		.vertical-separator {
+			height: 32px;
+			margin-left: auto;
+			margin-top: 24px;
+		}
+		.product-external-icon {
+			margin-left: 40px;
+			margin-top: 32px;
+			margin-right: 63px;
+		}
+	}
+}
+
+.consideration-conversion-summary {
+	.consideration-conversion-headers {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+
+		.header {
+			font-family: "NotoSans-SemiBold";
+			font-size: 22px;
+			margin-bottom: 25px;
+		}
+		.conversion-tab {
+			.tab-outer-container {
+				width: auto;
+			}
+		}
+		.tab-name {
+			margin-right: 0;
+		}
+		.tab-no-of-records {
+			display: none;
+		}
+		.vertical-separator {
+			margin: 0 60px;
+			height: 50px;
+			background-color: $borderColor;
+		}
+	}
+}

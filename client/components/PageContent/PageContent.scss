@@ -1,0 +1,42 @@
+@import "../../styles/colors.scss";
+
+.main-page-content {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.overall-score-lineChart {
+	max-height: 581px;
+	width: 100%;
+}
+.filter-bar_compare-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	.brand-comapre {
+		padding: 0px 10px 0px 15px;
+	}
+	.compare-button {
+		cursor: pointer;
+		color: $defaultBackgroundColor;
+		display: flex;
+		align-items: center;
+		font-family: "NotoSans-Bold";
+		font-size: 12px;
+		letter-spacing: 2px;
+		line-height: 18px;
+		height: 36px;
+		width: 129px;
+		margin-top: 35px;
+		border-radius: 7px;
+		background-color: $linkSelectedColor;
+		box-shadow: 0 2px 4px 0 rgba(0, 67, 132, 0.3),
+			0 10px 20px -12px rgba(0, 67, 132, 0.3);
+		border: 1px solid transparent;
+		&:hover {
+			background-color: $hoverBorderColor;
+			border: 1px solid $brandCompareHeaderColor;
+		}
+	}
+}

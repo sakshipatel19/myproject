@@ -1,0 +1,83 @@
+@import "../../../../styles/colors.scss";
+
+.lost-buy-box-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	.section-Header-container {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 30px;
+		.section-header-title {
+			color: $primaryBlackColor;
+			font-size: 22px;
+			font-family: "NotoSans-Bold";
+		}
+		.lost-buy-box-view-all-link {
+			text-decoration: none;
+			.view-all {
+				color: $primaryBlackColor;
+				font-size: 12px;
+				letter-spacing: 2px;
+				font-family: "NotoSans-SemiBold";
+				display: flex;
+				align-items: center;
+				.lost-buy-box-view-all-icon {
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+	.lost-buy-box-content {
+		display: flex;
+	}
+}
+.lost-buy-box-details-container {
+	.table-cell-product-code {
+		margin-top: 10px;
+		font-family: "NotoSans-SemiBold";
+	}
+	.number-text {
+		text-align: left;
+		.dot-container:first-child {
+			margin-right: 10px;
+		}
+	}
+	.lost-buy-box-search-container {
+		margin-bottom: 10px;
+		.search-keyword-list-container {
+			margin-top: 10px;
+		}
+	}
+	.lost-buy-box-table-container {
+		.common-table-container {
+			td.table-cell-product-name {
+				padding-right: 20px;
+			}
+		}
+	}
+}
+.lost-buy-box-details-header {
+	.loading-square {
+		width: 100%;
+		min-height: 100px;
+	}
+	.donut-chart-container {
+		.donut-chart-summary {
+			margin-right: 0;
+			margin-bottom: 40px;
+			flex-direction: row;
+			align-items: flex-end;
+		}
+		.donut-chart-total-score {
+			max-width: 175px;
+		}
+		.d3-donut-outer-div-container {
+			margin: 0 50px;
+		}
+		.donut-chart-factor {
+			margin-right: 30px;
+			padding: 0;
+		}
+	}
+}

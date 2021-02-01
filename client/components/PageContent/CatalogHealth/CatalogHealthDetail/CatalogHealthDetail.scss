@@ -1,0 +1,96 @@
+.summary-title-back-button {
+	margin-right: 25px;
+}
+.catalog-health-detail-container {
+	width: 100%;
+	.aligncenter {
+		color: #212129;
+		font-family: "NotoSans-Regular";
+		font-size: 14px;
+		letter-spacing: 0;
+		line-height: 20px;
+		.table-cell-product-code {
+			font-family: "NotoSans-SemiBold";
+		}
+		.catalog-detail-score-value {
+			display: none;
+		}
+		&:hover {
+			.dot-container,
+			.icon-class {
+				display: none;
+			}
+			.catalog-detail-score-value {
+				display: inline;
+			}
+		}
+	}
+	td,
+	th {
+		text-align: center;
+	}
+	th {
+		padding-right: 0;
+	}
+	td:first-child,
+	td:nth-child(2),
+	td:nth-child(3),
+	th:nth-child(1),
+	th:nth-child(2),
+	th:nth-child(3),
+	.table-cell-product-name {
+		text-align: left;
+	}
+}
+.catalog-health-search-container {
+	margin-bottom: 20px;
+	display: flex;
+	.catalog-health-search {
+		width: 86%;
+	}
+	.catalog-health-filter {
+		display: flex;
+		width: 10%;
+		height: 18px;
+		margin: 6px 0 6px auto;
+		padding-left: 3%;
+		border-left: 1px solid #e7e7e7;
+		color: #212129;
+		font-family: "NotoSans-SemiBold";
+		font-size: 12px;
+		letter-spacing: 1px;
+		line-height: 18px;
+		margin-bottom: 5px;
+		cursor: pointer;
+		.icon-class {
+			margin-left: 3%;
+			margin-right: 10%;
+		}
+	}
+}
+.catalog-health-tab-container {
+	display: flex;
+	margin-bottom: 21px;
+	width: 100%;
+	.catalog-health-tab {
+		.tab-details:last-child {
+			margin-right: 0;
+		}
+	}
+	.catalog-health-tab-dropdown {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		align-content: center;
+		margin-left: auto;
+		margin-bottom: 20px;
+		.dropdown-container {
+			width: 160px;
+		}
+	}
+	.download-icon {
+		margin-left: 4%;
+		margin-top: 8px;
+	}
+}

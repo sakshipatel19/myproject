@@ -1,0 +1,92 @@
+@import "../../../../styles/colors.scss";
+
+.line-chart-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 240px;
+	.div-chart-legends {
+		margin-top: 20px;
+
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.individual-latest-score {
+		display: flex;
+		font-size: 18px;
+		color: #212129;
+		font-family: "NotoSans-SemiBold";
+		.individual-latest-score-difference {
+			font-size: 12px;
+		}
+	}
+	.d3-line-chart-container {
+		margin-top: 15px;
+	}
+}
+
+.chart-header-container {
+	display: flex;
+	justify-content: space-between;
+	.chart-header-label {
+		color: $primaryBlackColor;
+		font-family: "NotoSans-Bold";
+		font-size: 22px;
+	}
+	.chart-header-right-content {
+		display: flex;
+		.summary-download-icon {
+			padding-left: 30px;
+		}
+	}
+}
+
+.chart-element-container {
+	display: flex;
+	.chart-element-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		border-radius: 9px;
+		height: 126px;
+		width: 168px;
+		margin-right: 25px;
+		position: relative;
+		color: $primaryBlackColor;
+		font-family: "NotoSans-Regular";
+		font-size: 14px;
+		cursor: pointer;
+		.chart-element-tag {
+			position: absolute;
+			top: 4px;
+			right: 4px;
+		}
+		&.chart-element-selected {
+			background-color: $scoreSelectedColor;
+			box-shadow: none;
+			cursor: default;
+			.d3-element-value {
+				font-family: "NotoSans-Medium";
+				font-size: 28px;
+				letter-spacing: 1px;
+			}
+		}
+		.chart-element-header {
+			margin-top: 17px;
+			margin-left: 18px;
+		}
+		.d3-element-chart {
+			align-self: flex-end;
+			width: 100%;
+			.d3-outer-div-container {
+				margin: 0;
+			}
+		}
+		.d3-element-value {
+			font-size: 22px;
+			margin-left: 18px;
+			margin-top: 6px;
+		}
+	}
+}

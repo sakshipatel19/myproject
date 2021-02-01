@@ -1,0 +1,230 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BestSeller tests BestSeller should render correctly 1`] = `
+<div
+  className="bestseller-container section-header-main"
+>
+  <Card>
+    <div
+      className="card-header tabPresent"
+    >
+      <div
+        className="card-title section-header-title"
+      >
+        Top Sellers
+      </div>
+      <div
+        className="bestseller-tab-container"
+      >
+        <div
+          className="bestseller-tab"
+        >
+          <Tab
+            data={
+              Array [
+                Object {
+                  "key": "price",
+                  "label": "PRICE",
+                },
+                Object {
+                  "key": "promotion",
+                  "label": "PROMOTION",
+                },
+              ]
+            }
+            onTabChange={[Function]}
+            selectedTab="price"
+          />
+        </div>
+        <div
+          className="bestseller-dropdown-container"
+        >
+          <DropdownWithState
+            onSelect={[Function]}
+            options={
+              Array [
+                Object {
+                  "label": "Calcium",
+                  "value": "Calcium",
+                },
+                Object {
+                  "label": "Antacids",
+                  "value": "Antacids",
+                },
+              ]
+            }
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="bestseller-detailpage-container"
+    >
+      <Table
+        DataRowComponent={[Function]}
+        data={
+          Array [
+            Object {
+              "brandName": "Tylenol",
+              "productId": "ABCD",
+              "productName": "abcd efgh ijkl",
+              "productUrl": "www.amazon.com",
+              "rank": "#1",
+              "score": 75,
+            },
+          ]
+        }
+        header={
+          Array [
+            Object {
+              "isNumber": false,
+              "isSortable": true,
+              "key": "rank",
+              "name": "Rank",
+              "style": Object {
+                "width": "10.57%",
+              },
+            },
+            Object {
+              "isSortable": true,
+              "key": "brandName",
+              "name": "Brand",
+              "style": Object {
+                "width": "22.6%",
+              },
+            },
+            Object {
+              "iconName": "externalPage",
+              "isSortable": false,
+              "key": "productName",
+              "name": "Product Name",
+              "style": Object {
+                "paddingRight": "8.77%",
+                "width": "48.94%",
+              },
+            },
+            Object {
+              "isSortable": false,
+              "key": "productId",
+              "name": "ASIN",
+              "style": Object {
+                "width": "16.8%",
+              },
+            },
+            Object {
+              "isSortable": true,
+              "key": "score",
+              "name": "Score",
+              "style": Object {
+                "width": "4%",
+              },
+            },
+          ]
+        }
+        isInternalSorting={true}
+        tableFilter={
+          Object {
+            "pageNo": 1,
+            "pageSize": 15,
+            "sortBy": "rank",
+            "sortType": "ASC",
+          }
+        }
+      />
+    </div>
+  </Card>
+</div>
+`;
+
+exports[`BestSeller tests BestSeller should render correctly when no props are received 1`] = `
+<div
+  className="bestseller-container section-header-main"
+>
+  <Card>
+    <div
+      className="card-header "
+    >
+      <div
+        className="card-title section-header-title"
+      >
+        Top Sellers
+      </div>
+      <div
+        className="bestseller-tab-container"
+      >
+        <div
+          className="bestseller-dropdown-container"
+        >
+          <DropdownWithState
+            onSelect={[Function]}
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="bestseller-detailpage-container"
+    >
+      <Table
+        DataRowComponent={[Function]}
+        data={Array []}
+        header={
+          Array [
+            Object {
+              "isNumber": false,
+              "isSortable": true,
+              "key": "rank",
+              "name": "Rank",
+              "style": Object {
+                "width": "10.57%",
+              },
+            },
+            Object {
+              "isSortable": true,
+              "key": "brandName",
+              "name": "Brand",
+              "style": Object {
+                "width": "22.6%",
+              },
+            },
+            Object {
+              "iconName": "externalPage",
+              "isSortable": false,
+              "key": "productName",
+              "name": "Product Name",
+              "style": Object {
+                "paddingRight": "8.77%",
+                "width": "48.94%",
+              },
+            },
+            Object {
+              "isSortable": false,
+              "key": "productId",
+              "name": "ASIN",
+              "style": Object {
+                "width": "16.8%",
+              },
+            },
+            Object {
+              "isSortable": true,
+              "key": "score",
+              "name": "Score",
+              "style": Object {
+                "width": "4%",
+              },
+            },
+          ]
+        }
+        isInternalSorting={true}
+        tableFilter={
+          Object {
+            "pageNo": 1,
+            "pageSize": 15,
+            "sortBy": "rank",
+            "sortType": "ASC",
+          }
+        }
+      />
+    </div>
+  </Card>
+</div>
+`;

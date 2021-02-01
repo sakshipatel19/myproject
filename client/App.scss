@@ -1,0 +1,41 @@
+.modal-header-container {
+	height: 55px;
+	border-radius: 7px 7px 0 0;
+	background-color: #fff2da;
+	.modal-header-content {
+		color: #212129;
+		font-family: "GothamNarrow-Medium";
+		font-size: 22px;
+		font-weight: 500;
+		letter-spacing: 0;
+		line-height: 32px;
+		padding-left: 20px;
+		padding-top: 10px;
+	}
+}
+.modal-main-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.session-expired-icon {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	.session-expired-message {
+		color: #212129;
+		font-family: "GothamNarrow-Book";
+		font-size: 14px;
+		font-weight: 300;
+		letter-spacing: 0;
+		line-height: 20px;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.primary-button {
+		height: 30px;
+		width: 93px;
+		font-size: 12px;
+		letter-spacing: 2px;
+	}
+}

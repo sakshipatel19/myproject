@@ -1,0 +1,248 @@
+@import "../../../styles/colors.scss";
+.brand-compare-popup-container {
+	.brand-compare-modal-conatiner-asin-page {
+		display: flex;
+		width: 1000px;
+		height: 620px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border: none;
+		justify-content: center;
+		flex-direction: column;
+		position: fixed;
+		z-index: 2;
+		background-color: $defaultBackgroundColor;
+		border-radius: 8px;
+		.brandtype-tabs-conatier {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 20px 30px 30px 30px;
+			align-items: center;
+		}
+		.brand-compare-modal-header {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			height: 90px;
+			border-radius: 8px 8px 0 0;
+			background-color: $brandCompareHeaderColor;
+			color: $defaultBackgroundColor;
+			align-items: center;
+			.text-container {
+				padding: 20px 35px;
+				.header-text {
+					font-family: "NotoSans-Bold";
+					font-size: 22px;
+					letter-spacing: 0;
+					line-height: 32px;
+				}
+				.header-text-small {
+					font-family: "NotoSans-Regular";
+					font-size: 12px;
+					letter-spacing: 0;
+					line-height: 18px;
+				}
+			}
+			.brand-compare-close {
+				cursor: pointer;
+				margin-right: 30px;
+			}
+		}
+		.brand-compare-modal-body {
+			flex: 1;
+			height: 400px;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			border-top: 1px solid #e7e7e7;
+			.brand-compare-items-list-container {
+				padding: 20px 0px 0px 20px;
+				border-right: 1px solid #e7e7e7;
+				.top-seller {
+					margin-top: 8px !important;
+				}
+				.search-container {
+					margin-top: 20px;
+					box-sizing: border-box;
+					height: 30px;
+					width: 230px;
+					border: 1px solid $brandCompareSearchContainerColor;
+					border-radius: 4px;
+					background-color: $defaultBackgroundColor;
+					display: flex;
+					align-items: center;
+					padding-left: 10px;
+					.search-input {
+						border: none;
+						color: $primaryBlackColor;
+						font-size: 14px;
+						letter-spacing: 0px;
+						line-height: 20px;
+						&:focus {
+							outline: none;
+						}
+						&::placeholder {
+							color: $tableBestSellerKeywordBorderBottom;
+						}
+					}
+				}
+
+				.list-heading {
+					color: $primaryBlackColor;
+					font-family: "NotoSans-SemiBold";
+					font-size: 12px;
+					font-weight: 600;
+					letter-spacing: 0;
+					line-height: 18px;
+				}
+				.sub-heading {
+					color: $primaryBlackColor;
+					font-family: "NotoSans-Regular";
+					font-size: 9px;
+					letter-spacing: 0;
+					line-height: 14px;
+				}
+				.brand-compare-checkbox-list-container {
+					overflow-y: scroll;
+					height: 285px;
+					width: 260px;
+					margin-top: 20px;
+					padding-right: 10px;
+					scrollbar-color: $scrollbarColor transparent;
+					scrollbar-track-color: transparent;
+					scrollbar-width: thin;
+					&::-webkit-scrollbar {
+						width: 10px;
+						height: 14px;
+					}
+					&::-webkit-scrollbar-thumb {
+						border: 3px solid rgba(0, 0, 0, 0);
+						background-clip: padding-box;
+						border-radius: 12px;
+						background-color: $scrollbarColor;
+					}
+					.asin-comapre-list-item {
+						cursor: pointer;
+						padding: 10px;
+						.asin-brand-remove {
+							margin-right: 10px;
+						}
+					}
+					.checkbox-item {
+						padding-left: 0px;
+					}
+					.brand-compare-checkbox-container {
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						font-size: 12px;
+						justify-content: space-between;
+						border-bottom: 1px solid #f2f2f2;
+						&:hover {
+							background: #dbedff;
+						}
+					}
+					.brand-compare-checkbox-container.selected {
+						background: #dbedff;
+					}
+				}
+				.brand-compare-checkbox-list-container.asin {
+					width: 100%;
+					.brand-compare-checkbox-container {
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+
+						&:hover {
+							background: #dbedff;
+						}
+						.checkbox-item {
+							&:hover {
+								background: none;
+							}
+						}
+						.asin-id {
+							font-family: "NotoSans-SemiBold";
+							padding-left: 30px;
+							padding-bottom: 10px;
+						}
+					}
+					.brand-compare-checkbox-container.selected {
+						background: #dbedff;
+					}
+				}
+			}
+			.brand-compare-items-list-container.asin {
+				width: 100%;
+				border: none;
+			}
+		}
+		.brand-compare-modal-footer {
+			height: 90px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			padding: 25px 35px;
+			border-radius: 0 0 9px 9px;
+			background-color: $filterSelectedColor;
+			.compare-disabled {
+				cursor: not-allowed !important;
+				color: $borderColor !important;
+			}
+			.save-as-compareset {
+				color: $primaryBlackColor;
+				font-family: "NotoSans-SemiBold";
+				font-size: 12px;
+				letter-spacing: 1px;
+				line-height: 18px;
+				display: flex;
+				align-items: center;
+				.compare-set {
+					padding-right: 10px;
+				}
+			}
+			.brand-compare-buttons {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				.compare-select {
+					width: 129px;
+					height: 36px;
+					border-radius: 7px;
+					color: $defaultBackgroundColor;
+					font-family: "NotoSans-Bold";
+					font-size: 12px;
+					letter-spacing: 2px;
+					line-height: 18px;
+					padding: 10px 28px;
+					background-color: $linkSelectedColor;
+					margin-left: 30px;
+					box-shadow: 0 2px 4px 0 rgba(0, 67, 132, 0.3),
+						0 10px 20px -12px rgba(0, 67, 132, 0.3);
+					cursor: pointer;
+				}
+				.compare-disabled {
+					background-color: $tabContainerBorderBottom !important;
+					box-shadow: none;
+					border: 1px solid $tabContainerBorderBottom;
+				}
+				.separator-compare {
+					background-color: $tableBestSellerKeywordBorderBottom;
+					height: 20px;
+				}
+				.compare-cancel {
+					color: $primaryBlackColor;
+					font-family: "NotoSans-SemiBold";
+					font-size: 12px;
+					letter-spacing: 1px;
+					line-height: 18px;
+					margin-right: 30px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

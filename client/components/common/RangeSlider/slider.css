@@ -1,0 +1,93 @@
+.slider-container {
+	position: relative;
+	cursor: pointer;
+	width: 240px;
+}
+
+.slider-selected-scale {
+	display: flex;
+}
+.slider {
+	display: flex;
+	position: relative;
+	user-select: none;
+}
+
+.slider-thumb {
+	position: absolute;
+	background-color: gray;
+	height: 11px;
+	width: 11px;
+	border-radius: 50%;
+	top: -16px;
+	touch-action: none;
+}
+
+.slider-thumb-min {
+	background-color: #16abe0;
+}
+
+.slider-thumb-max {
+	background-color: #16abe0;
+	right: 0px;
+}
+
+.slot {
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	flex: 1;
+	height: 15px;
+	background-color: none;
+}
+
+.scale-mark {
+	position: absolute;
+	border: 0px solid lightgray;
+	height: 0px;
+}
+
+.slot-scale {
+	flex: 1;
+	vertical-align: middle;
+	text-align: center;
+	display: inline-block;
+	color: #212129;
+	font-family: "NotoSans-Regular";
+	font-size: 12px;
+	letter-spacing: 0;
+	line-height: 18px;
+}
+.slot-scale-start {
+	text-align: left;
+	padding-right: 4px;
+}
+
+.slot > .slider-thumb {
+	top: -4px;
+}
+
+.slot:first-child .line {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.slot:last-child .line {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/* .slot:last-child .slider-thumb-max {
+	right: -2px;
+} */
+
+.line {
+	background-color: #e7e7e7;
+	height: 4px;
+	top: 12px;
+}
+
+.line-selected {
+	height: 4px;
+	background-color: #b1eaff;
+}
